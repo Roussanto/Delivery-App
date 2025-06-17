@@ -1,0 +1,1729 @@
+chamomile_type,sugar,sugar_type,milk,extra,cost
+chamomile,,,,,1.8
+chamomile,,,,chocolate syrup,2.1
+chamomile,,,,strawberry syrup,2.1
+chamomile,,,,caramel syrup,2.1
+chamomile,,,,hazelnut syrup,2.1
+chamomile,,,,vanilla syrup,2.1
+chamomile,,,,cinnamon powder,1.8
+chamomile,,,,chocolate powder,1.8
+chamomile,,,fresh,,1.8
+chamomile,,,fresh,chocolate syrup,2.1
+chamomile,,,fresh,strawberry syrup,2.1
+chamomile,,,fresh,caramel syrup,2.1
+chamomile,,,fresh,hazelnut syrup,2.1
+chamomile,,,fresh,vanilla syrup,2.1
+chamomile,,,fresh,cinnamon powder,1.8
+chamomile,,,fresh,chocolate powder,1.8
+chamomile,,,evapore,,1.8
+chamomile,,,evapore,chocolate syrup,2.1
+chamomile,,,evapore,strawberry syrup,2.1
+chamomile,,,evapore,caramel syrup,2.1
+chamomile,,,evapore,hazelnut syrup,2.1
+chamomile,,,evapore,vanilla syrup,2.1
+chamomile,,,evapore,cinnamon powder,1.8
+chamomile,,,evapore,chocolate powder,1.8
+chamomile,,,almond,,2.2
+chamomile,,,almond,chocolate syrup,2.5
+chamomile,,,almond,strawberry syrup,2.5
+chamomile,,,almond,caramel syrup,2.5
+chamomile,,,almond,hazelnut syrup,2.5
+chamomile,,,almond,vanilla syrup,2.5
+chamomile,,,almond,cinnamon powder,2.2
+chamomile,,,almond,chocolate powder,2.2
+chamomile,,,coconut,,2.2
+chamomile,,,coconut,chocolate syrup,2.5
+chamomile,,,coconut,strawberry syrup,2.5
+chamomile,,,coconut,caramel syrup,2.5
+chamomile,,,coconut,hazelnut syrup,2.5
+chamomile,,,coconut,vanilla syrup,2.5
+chamomile,,,coconut,cinnamon powder,2.2
+chamomile,,,coconut,chocolate powder,2.2
+chamomile,,,oat,,2.2
+chamomile,,,oat,chocolate syrup,2.5
+chamomile,,,oat,strawberry syrup,2.5
+chamomile,,,oat,caramel syrup,2.5
+chamomile,,,oat,hazelnut syrup,2.5
+chamomile,,,oat,vanilla syrup,2.5
+chamomile,,,oat,cinnamon powder,2.2
+chamomile,,,oat,chocolate powder,2.2
+chamomile,,white,,,1.8
+chamomile,,white,,chocolate syrup,2.1
+chamomile,,white,,strawberry syrup,2.1
+chamomile,,white,,caramel syrup,2.1
+chamomile,,white,,hazelnut syrup,2.1
+chamomile,,white,,vanilla syrup,2.1
+chamomile,,white,,cinnamon powder,1.8
+chamomile,,white,,chocolate powder,1.8
+chamomile,,white,fresh,,1.8
+chamomile,,white,fresh,chocolate syrup,2.1
+chamomile,,white,fresh,strawberry syrup,2.1
+chamomile,,white,fresh,caramel syrup,2.1
+chamomile,,white,fresh,hazelnut syrup,2.1
+chamomile,,white,fresh,vanilla syrup,2.1
+chamomile,,white,fresh,cinnamon powder,1.8
+chamomile,,white,fresh,chocolate powder,1.8
+chamomile,,white,evapore,,1.8
+chamomile,,white,evapore,chocolate syrup,2.1
+chamomile,,white,evapore,strawberry syrup,2.1
+chamomile,,white,evapore,caramel syrup,2.1
+chamomile,,white,evapore,hazelnut syrup,2.1
+chamomile,,white,evapore,vanilla syrup,2.1
+chamomile,,white,evapore,cinnamon powder,1.8
+chamomile,,white,evapore,chocolate powder,1.8
+chamomile,,white,almond,,2.2
+chamomile,,white,almond,chocolate syrup,2.5
+chamomile,,white,almond,strawberry syrup,2.5
+chamomile,,white,almond,caramel syrup,2.5
+chamomile,,white,almond,hazelnut syrup,2.5
+chamomile,,white,almond,vanilla syrup,2.5
+chamomile,,white,almond,cinnamon powder,2.2
+chamomile,,white,almond,chocolate powder,2.2
+chamomile,,white,coconut,,2.2
+chamomile,,white,coconut,chocolate syrup,2.5
+chamomile,,white,coconut,strawberry syrup,2.5
+chamomile,,white,coconut,caramel syrup,2.5
+chamomile,,white,coconut,hazelnut syrup,2.5
+chamomile,,white,coconut,vanilla syrup,2.5
+chamomile,,white,coconut,cinnamon powder,2.2
+chamomile,,white,coconut,chocolate powder,2.2
+chamomile,,white,oat,,2.2
+chamomile,,white,oat,chocolate syrup,2.5
+chamomile,,white,oat,strawberry syrup,2.5
+chamomile,,white,oat,caramel syrup,2.5
+chamomile,,white,oat,hazelnut syrup,2.5
+chamomile,,white,oat,vanilla syrup,2.5
+chamomile,,white,oat,cinnamon powder,2.2
+chamomile,,white,oat,chocolate powder,2.2
+chamomile,,brown,,,1.8
+chamomile,,brown,,chocolate syrup,2.1
+chamomile,,brown,,strawberry syrup,2.1
+chamomile,,brown,,caramel syrup,2.1
+chamomile,,brown,,hazelnut syrup,2.1
+chamomile,,brown,,vanilla syrup,2.1
+chamomile,,brown,,cinnamon powder,1.8
+chamomile,,brown,,chocolate powder,1.8
+chamomile,,brown,fresh,,1.8
+chamomile,,brown,fresh,chocolate syrup,2.1
+chamomile,,brown,fresh,strawberry syrup,2.1
+chamomile,,brown,fresh,caramel syrup,2.1
+chamomile,,brown,fresh,hazelnut syrup,2.1
+chamomile,,brown,fresh,vanilla syrup,2.1
+chamomile,,brown,fresh,cinnamon powder,1.8
+chamomile,,brown,fresh,chocolate powder,1.8
+chamomile,,brown,evapore,,1.8
+chamomile,,brown,evapore,chocolate syrup,2.1
+chamomile,,brown,evapore,strawberry syrup,2.1
+chamomile,,brown,evapore,caramel syrup,2.1
+chamomile,,brown,evapore,hazelnut syrup,2.1
+chamomile,,brown,evapore,vanilla syrup,2.1
+chamomile,,brown,evapore,cinnamon powder,1.8
+chamomile,,brown,evapore,chocolate powder,1.8
+chamomile,,brown,almond,,2.2
+chamomile,,brown,almond,chocolate syrup,2.5
+chamomile,,brown,almond,strawberry syrup,2.5
+chamomile,,brown,almond,caramel syrup,2.5
+chamomile,,brown,almond,hazelnut syrup,2.5
+chamomile,,brown,almond,vanilla syrup,2.5
+chamomile,,brown,almond,cinnamon powder,2.2
+chamomile,,brown,almond,chocolate powder,2.2
+chamomile,,brown,coconut,,2.2
+chamomile,,brown,coconut,chocolate syrup,2.5
+chamomile,,brown,coconut,strawberry syrup,2.5
+chamomile,,brown,coconut,caramel syrup,2.5
+chamomile,,brown,coconut,hazelnut syrup,2.5
+chamomile,,brown,coconut,vanilla syrup,2.5
+chamomile,,brown,coconut,cinnamon powder,2.2
+chamomile,,brown,coconut,chocolate powder,2.2
+chamomile,,brown,oat,,2.2
+chamomile,,brown,oat,chocolate syrup,2.5
+chamomile,,brown,oat,strawberry syrup,2.5
+chamomile,,brown,oat,caramel syrup,2.5
+chamomile,,brown,oat,hazelnut syrup,2.5
+chamomile,,brown,oat,vanilla syrup,2.5
+chamomile,,brown,oat,cinnamon powder,2.2
+chamomile,,brown,oat,chocolate powder,2.2
+chamomile,,saccharin,,,1.8
+chamomile,,saccharin,,chocolate syrup,2.1
+chamomile,,saccharin,,strawberry syrup,2.1
+chamomile,,saccharin,,caramel syrup,2.1
+chamomile,,saccharin,,hazelnut syrup,2.1
+chamomile,,saccharin,,vanilla syrup,2.1
+chamomile,,saccharin,,cinnamon powder,1.8
+chamomile,,saccharin,,chocolate powder,1.8
+chamomile,,saccharin,fresh,,1.8
+chamomile,,saccharin,fresh,chocolate syrup,2.1
+chamomile,,saccharin,fresh,strawberry syrup,2.1
+chamomile,,saccharin,fresh,caramel syrup,2.1
+chamomile,,saccharin,fresh,hazelnut syrup,2.1
+chamomile,,saccharin,fresh,vanilla syrup,2.1
+chamomile,,saccharin,fresh,cinnamon powder,1.8
+chamomile,,saccharin,fresh,chocolate powder,1.8
+chamomile,,saccharin,evapore,,1.8
+chamomile,,saccharin,evapore,chocolate syrup,2.1
+chamomile,,saccharin,evapore,strawberry syrup,2.1
+chamomile,,saccharin,evapore,caramel syrup,2.1
+chamomile,,saccharin,evapore,hazelnut syrup,2.1
+chamomile,,saccharin,evapore,vanilla syrup,2.1
+chamomile,,saccharin,evapore,cinnamon powder,1.8
+chamomile,,saccharin,evapore,chocolate powder,1.8
+chamomile,,saccharin,almond,,2.2
+chamomile,,saccharin,almond,chocolate syrup,2.5
+chamomile,,saccharin,almond,strawberry syrup,2.5
+chamomile,,saccharin,almond,caramel syrup,2.5
+chamomile,,saccharin,almond,hazelnut syrup,2.5
+chamomile,,saccharin,almond,vanilla syrup,2.5
+chamomile,,saccharin,almond,cinnamon powder,2.2
+chamomile,,saccharin,almond,chocolate powder,2.2
+chamomile,,saccharin,coconut,,2.2
+chamomile,,saccharin,coconut,chocolate syrup,2.5
+chamomile,,saccharin,coconut,strawberry syrup,2.5
+chamomile,,saccharin,coconut,caramel syrup,2.5
+chamomile,,saccharin,coconut,hazelnut syrup,2.5
+chamomile,,saccharin,coconut,vanilla syrup,2.5
+chamomile,,saccharin,coconut,cinnamon powder,2.2
+chamomile,,saccharin,coconut,chocolate powder,2.2
+chamomile,,saccharin,oat,,2.2
+chamomile,,saccharin,oat,chocolate syrup,2.5
+chamomile,,saccharin,oat,strawberry syrup,2.5
+chamomile,,saccharin,oat,caramel syrup,2.5
+chamomile,,saccharin,oat,hazelnut syrup,2.5
+chamomile,,saccharin,oat,vanilla syrup,2.5
+chamomile,,saccharin,oat,cinnamon powder,2.2
+chamomile,,saccharin,oat,chocolate powder,2.2
+chamomile,,stevia,,,1.8
+chamomile,,stevia,,chocolate syrup,2.1
+chamomile,,stevia,,strawberry syrup,2.1
+chamomile,,stevia,,caramel syrup,2.1
+chamomile,,stevia,,hazelnut syrup,2.1
+chamomile,,stevia,,vanilla syrup,2.1
+chamomile,,stevia,,cinnamon powder,1.8
+chamomile,,stevia,,chocolate powder,1.8
+chamomile,,stevia,fresh,,1.8
+chamomile,,stevia,fresh,chocolate syrup,2.1
+chamomile,,stevia,fresh,strawberry syrup,2.1
+chamomile,,stevia,fresh,caramel syrup,2.1
+chamomile,,stevia,fresh,hazelnut syrup,2.1
+chamomile,,stevia,fresh,vanilla syrup,2.1
+chamomile,,stevia,fresh,cinnamon powder,1.8
+chamomile,,stevia,fresh,chocolate powder,1.8
+chamomile,,stevia,evapore,,1.8
+chamomile,,stevia,evapore,chocolate syrup,2.1
+chamomile,,stevia,evapore,strawberry syrup,2.1
+chamomile,,stevia,evapore,caramel syrup,2.1
+chamomile,,stevia,evapore,hazelnut syrup,2.1
+chamomile,,stevia,evapore,vanilla syrup,2.1
+chamomile,,stevia,evapore,cinnamon powder,1.8
+chamomile,,stevia,evapore,chocolate powder,1.8
+chamomile,,stevia,almond,,2.2
+chamomile,,stevia,almond,chocolate syrup,2.5
+chamomile,,stevia,almond,strawberry syrup,2.5
+chamomile,,stevia,almond,caramel syrup,2.5
+chamomile,,stevia,almond,hazelnut syrup,2.5
+chamomile,,stevia,almond,vanilla syrup,2.5
+chamomile,,stevia,almond,cinnamon powder,2.2
+chamomile,,stevia,almond,chocolate powder,2.2
+chamomile,,stevia,coconut,,2.2
+chamomile,,stevia,coconut,chocolate syrup,2.5
+chamomile,,stevia,coconut,strawberry syrup,2.5
+chamomile,,stevia,coconut,caramel syrup,2.5
+chamomile,,stevia,coconut,hazelnut syrup,2.5
+chamomile,,stevia,coconut,vanilla syrup,2.5
+chamomile,,stevia,coconut,cinnamon powder,2.2
+chamomile,,stevia,coconut,chocolate powder,2.2
+chamomile,,stevia,oat,,2.2
+chamomile,,stevia,oat,chocolate syrup,2.5
+chamomile,,stevia,oat,strawberry syrup,2.5
+chamomile,,stevia,oat,caramel syrup,2.5
+chamomile,,stevia,oat,hazelnut syrup,2.5
+chamomile,,stevia,oat,vanilla syrup,2.5
+chamomile,,stevia,oat,cinnamon powder,2.2
+chamomile,,stevia,oat,chocolate powder,2.2
+chamomile,,honey,,,2.1
+chamomile,,honey,,chocolate syrup,2.4
+chamomile,,honey,,strawberry syrup,2.4
+chamomile,,honey,,caramel syrup,2.4
+chamomile,,honey,,hazelnut syrup,2.4
+chamomile,,honey,,vanilla syrup,2.4
+chamomile,,honey,,cinnamon powder,2.1
+chamomile,,honey,,chocolate powder,2.1
+chamomile,,honey,fresh,,2.1
+chamomile,,honey,fresh,chocolate syrup,2.4
+chamomile,,honey,fresh,strawberry syrup,2.4
+chamomile,,honey,fresh,caramel syrup,2.4
+chamomile,,honey,fresh,hazelnut syrup,2.4
+chamomile,,honey,fresh,vanilla syrup,2.4
+chamomile,,honey,fresh,cinnamon powder,2.1
+chamomile,,honey,fresh,chocolate powder,2.1
+chamomile,,honey,evapore,,2.1
+chamomile,,honey,evapore,chocolate syrup,2.4
+chamomile,,honey,evapore,strawberry syrup,2.4
+chamomile,,honey,evapore,caramel syrup,2.4
+chamomile,,honey,evapore,hazelnut syrup,2.4
+chamomile,,honey,evapore,vanilla syrup,2.4
+chamomile,,honey,evapore,cinnamon powder,2.1
+chamomile,,honey,evapore,chocolate powder,2.1
+chamomile,,honey,almond,,2.5
+chamomile,,honey,almond,chocolate syrup,2.8
+chamomile,,honey,almond,strawberry syrup,2.8
+chamomile,,honey,almond,caramel syrup,2.8
+chamomile,,honey,almond,hazelnut syrup,2.8
+chamomile,,honey,almond,vanilla syrup,2.8
+chamomile,,honey,almond,cinnamon powder,2.5
+chamomile,,honey,almond,chocolate powder,2.5
+chamomile,,honey,coconut,,2.5
+chamomile,,honey,coconut,chocolate syrup,2.8
+chamomile,,honey,coconut,strawberry syrup,2.8
+chamomile,,honey,coconut,caramel syrup,2.8
+chamomile,,honey,coconut,hazelnut syrup,2.8
+chamomile,,honey,coconut,vanilla syrup,2.8
+chamomile,,honey,coconut,cinnamon powder,2.5
+chamomile,,honey,coconut,chocolate powder,2.5
+chamomile,,honey,oat,,2.5
+chamomile,,honey,oat,chocolate syrup,2.8
+chamomile,,honey,oat,strawberry syrup,2.8
+chamomile,,honey,oat,caramel syrup,2.8
+chamomile,,honey,oat,hazelnut syrup,2.8
+chamomile,,honey,oat,vanilla syrup,2.8
+chamomile,,honey,oat,cinnamon powder,2.5
+chamomile,,honey,oat,chocolate powder,2.5
+chamomile,little,,,,1.8
+chamomile,little,,,chocolate syrup,2.1
+chamomile,little,,,strawberry syrup,2.1
+chamomile,little,,,caramel syrup,2.1
+chamomile,little,,,hazelnut syrup,2.1
+chamomile,little,,,vanilla syrup,2.1
+chamomile,little,,,cinnamon powder,1.8
+chamomile,little,,,chocolate powder,1.8
+chamomile,little,,fresh,,1.8
+chamomile,little,,fresh,chocolate syrup,2.1
+chamomile,little,,fresh,strawberry syrup,2.1
+chamomile,little,,fresh,caramel syrup,2.1
+chamomile,little,,fresh,hazelnut syrup,2.1
+chamomile,little,,fresh,vanilla syrup,2.1
+chamomile,little,,fresh,cinnamon powder,1.8
+chamomile,little,,fresh,chocolate powder,1.8
+chamomile,little,,evapore,,1.8
+chamomile,little,,evapore,chocolate syrup,2.1
+chamomile,little,,evapore,strawberry syrup,2.1
+chamomile,little,,evapore,caramel syrup,2.1
+chamomile,little,,evapore,hazelnut syrup,2.1
+chamomile,little,,evapore,vanilla syrup,2.1
+chamomile,little,,evapore,cinnamon powder,1.8
+chamomile,little,,evapore,chocolate powder,1.8
+chamomile,little,,almond,,2.2
+chamomile,little,,almond,chocolate syrup,2.5
+chamomile,little,,almond,strawberry syrup,2.5
+chamomile,little,,almond,caramel syrup,2.5
+chamomile,little,,almond,hazelnut syrup,2.5
+chamomile,little,,almond,vanilla syrup,2.5
+chamomile,little,,almond,cinnamon powder,2.2
+chamomile,little,,almond,chocolate powder,2.2
+chamomile,little,,coconut,,2.2
+chamomile,little,,coconut,chocolate syrup,2.5
+chamomile,little,,coconut,strawberry syrup,2.5
+chamomile,little,,coconut,caramel syrup,2.5
+chamomile,little,,coconut,hazelnut syrup,2.5
+chamomile,little,,coconut,vanilla syrup,2.5
+chamomile,little,,coconut,cinnamon powder,2.2
+chamomile,little,,coconut,chocolate powder,2.2
+chamomile,little,,oat,,2.2
+chamomile,little,,oat,chocolate syrup,2.5
+chamomile,little,,oat,strawberry syrup,2.5
+chamomile,little,,oat,caramel syrup,2.5
+chamomile,little,,oat,hazelnut syrup,2.5
+chamomile,little,,oat,vanilla syrup,2.5
+chamomile,little,,oat,cinnamon powder,2.2
+chamomile,little,,oat,chocolate powder,2.2
+chamomile,little,white,,,1.8
+chamomile,little,white,,chocolate syrup,2.1
+chamomile,little,white,,strawberry syrup,2.1
+chamomile,little,white,,caramel syrup,2.1
+chamomile,little,white,,hazelnut syrup,2.1
+chamomile,little,white,,vanilla syrup,2.1
+chamomile,little,white,,cinnamon powder,1.8
+chamomile,little,white,,chocolate powder,1.8
+chamomile,little,white,fresh,,1.8
+chamomile,little,white,fresh,chocolate syrup,2.1
+chamomile,little,white,fresh,strawberry syrup,2.1
+chamomile,little,white,fresh,caramel syrup,2.1
+chamomile,little,white,fresh,hazelnut syrup,2.1
+chamomile,little,white,fresh,vanilla syrup,2.1
+chamomile,little,white,fresh,cinnamon powder,1.8
+chamomile,little,white,fresh,chocolate powder,1.8
+chamomile,little,white,evapore,,1.8
+chamomile,little,white,evapore,chocolate syrup,2.1
+chamomile,little,white,evapore,strawberry syrup,2.1
+chamomile,little,white,evapore,caramel syrup,2.1
+chamomile,little,white,evapore,hazelnut syrup,2.1
+chamomile,little,white,evapore,vanilla syrup,2.1
+chamomile,little,white,evapore,cinnamon powder,1.8
+chamomile,little,white,evapore,chocolate powder,1.8
+chamomile,little,white,almond,,2.2
+chamomile,little,white,almond,chocolate syrup,2.5
+chamomile,little,white,almond,strawberry syrup,2.5
+chamomile,little,white,almond,caramel syrup,2.5
+chamomile,little,white,almond,hazelnut syrup,2.5
+chamomile,little,white,almond,vanilla syrup,2.5
+chamomile,little,white,almond,cinnamon powder,2.2
+chamomile,little,white,almond,chocolate powder,2.2
+chamomile,little,white,coconut,,2.2
+chamomile,little,white,coconut,chocolate syrup,2.5
+chamomile,little,white,coconut,strawberry syrup,2.5
+chamomile,little,white,coconut,caramel syrup,2.5
+chamomile,little,white,coconut,hazelnut syrup,2.5
+chamomile,little,white,coconut,vanilla syrup,2.5
+chamomile,little,white,coconut,cinnamon powder,2.2
+chamomile,little,white,coconut,chocolate powder,2.2
+chamomile,little,white,oat,,2.2
+chamomile,little,white,oat,chocolate syrup,2.5
+chamomile,little,white,oat,strawberry syrup,2.5
+chamomile,little,white,oat,caramel syrup,2.5
+chamomile,little,white,oat,hazelnut syrup,2.5
+chamomile,little,white,oat,vanilla syrup,2.5
+chamomile,little,white,oat,cinnamon powder,2.2
+chamomile,little,white,oat,chocolate powder,2.2
+chamomile,little,brown,,,1.8
+chamomile,little,brown,,chocolate syrup,2.1
+chamomile,little,brown,,strawberry syrup,2.1
+chamomile,little,brown,,caramel syrup,2.1
+chamomile,little,brown,,hazelnut syrup,2.1
+chamomile,little,brown,,vanilla syrup,2.1
+chamomile,little,brown,,cinnamon powder,1.8
+chamomile,little,brown,,chocolate powder,1.8
+chamomile,little,brown,fresh,,1.8
+chamomile,little,brown,fresh,chocolate syrup,2.1
+chamomile,little,brown,fresh,strawberry syrup,2.1
+chamomile,little,brown,fresh,caramel syrup,2.1
+chamomile,little,brown,fresh,hazelnut syrup,2.1
+chamomile,little,brown,fresh,vanilla syrup,2.1
+chamomile,little,brown,fresh,cinnamon powder,1.8
+chamomile,little,brown,fresh,chocolate powder,1.8
+chamomile,little,brown,evapore,,1.8
+chamomile,little,brown,evapore,chocolate syrup,2.1
+chamomile,little,brown,evapore,strawberry syrup,2.1
+chamomile,little,brown,evapore,caramel syrup,2.1
+chamomile,little,brown,evapore,hazelnut syrup,2.1
+chamomile,little,brown,evapore,vanilla syrup,2.1
+chamomile,little,brown,evapore,cinnamon powder,1.8
+chamomile,little,brown,evapore,chocolate powder,1.8
+chamomile,little,brown,almond,,2.2
+chamomile,little,brown,almond,chocolate syrup,2.5
+chamomile,little,brown,almond,strawberry syrup,2.5
+chamomile,little,brown,almond,caramel syrup,2.5
+chamomile,little,brown,almond,hazelnut syrup,2.5
+chamomile,little,brown,almond,vanilla syrup,2.5
+chamomile,little,brown,almond,cinnamon powder,2.2
+chamomile,little,brown,almond,chocolate powder,2.2
+chamomile,little,brown,coconut,,2.2
+chamomile,little,brown,coconut,chocolate syrup,2.5
+chamomile,little,brown,coconut,strawberry syrup,2.5
+chamomile,little,brown,coconut,caramel syrup,2.5
+chamomile,little,brown,coconut,hazelnut syrup,2.5
+chamomile,little,brown,coconut,vanilla syrup,2.5
+chamomile,little,brown,coconut,cinnamon powder,2.2
+chamomile,little,brown,coconut,chocolate powder,2.2
+chamomile,little,brown,oat,,2.2
+chamomile,little,brown,oat,chocolate syrup,2.5
+chamomile,little,brown,oat,strawberry syrup,2.5
+chamomile,little,brown,oat,caramel syrup,2.5
+chamomile,little,brown,oat,hazelnut syrup,2.5
+chamomile,little,brown,oat,vanilla syrup,2.5
+chamomile,little,brown,oat,cinnamon powder,2.2
+chamomile,little,brown,oat,chocolate powder,2.2
+chamomile,little,saccharin,,,1.8
+chamomile,little,saccharin,,chocolate syrup,2.1
+chamomile,little,saccharin,,strawberry syrup,2.1
+chamomile,little,saccharin,,caramel syrup,2.1
+chamomile,little,saccharin,,hazelnut syrup,2.1
+chamomile,little,saccharin,,vanilla syrup,2.1
+chamomile,little,saccharin,,cinnamon powder,1.8
+chamomile,little,saccharin,,chocolate powder,1.8
+chamomile,little,saccharin,fresh,,1.8
+chamomile,little,saccharin,fresh,chocolate syrup,2.1
+chamomile,little,saccharin,fresh,strawberry syrup,2.1
+chamomile,little,saccharin,fresh,caramel syrup,2.1
+chamomile,little,saccharin,fresh,hazelnut syrup,2.1
+chamomile,little,saccharin,fresh,vanilla syrup,2.1
+chamomile,little,saccharin,fresh,cinnamon powder,1.8
+chamomile,little,saccharin,fresh,chocolate powder,1.8
+chamomile,little,saccharin,evapore,,1.8
+chamomile,little,saccharin,evapore,chocolate syrup,2.1
+chamomile,little,saccharin,evapore,strawberry syrup,2.1
+chamomile,little,saccharin,evapore,caramel syrup,2.1
+chamomile,little,saccharin,evapore,hazelnut syrup,2.1
+chamomile,little,saccharin,evapore,vanilla syrup,2.1
+chamomile,little,saccharin,evapore,cinnamon powder,1.8
+chamomile,little,saccharin,evapore,chocolate powder,1.8
+chamomile,little,saccharin,almond,,2.2
+chamomile,little,saccharin,almond,chocolate syrup,2.5
+chamomile,little,saccharin,almond,strawberry syrup,2.5
+chamomile,little,saccharin,almond,caramel syrup,2.5
+chamomile,little,saccharin,almond,hazelnut syrup,2.5
+chamomile,little,saccharin,almond,vanilla syrup,2.5
+chamomile,little,saccharin,almond,cinnamon powder,2.2
+chamomile,little,saccharin,almond,chocolate powder,2.2
+chamomile,little,saccharin,coconut,,2.2
+chamomile,little,saccharin,coconut,chocolate syrup,2.5
+chamomile,little,saccharin,coconut,strawberry syrup,2.5
+chamomile,little,saccharin,coconut,caramel syrup,2.5
+chamomile,little,saccharin,coconut,hazelnut syrup,2.5
+chamomile,little,saccharin,coconut,vanilla syrup,2.5
+chamomile,little,saccharin,coconut,cinnamon powder,2.2
+chamomile,little,saccharin,coconut,chocolate powder,2.2
+chamomile,little,saccharin,oat,,2.2
+chamomile,little,saccharin,oat,chocolate syrup,2.5
+chamomile,little,saccharin,oat,strawberry syrup,2.5
+chamomile,little,saccharin,oat,caramel syrup,2.5
+chamomile,little,saccharin,oat,hazelnut syrup,2.5
+chamomile,little,saccharin,oat,vanilla syrup,2.5
+chamomile,little,saccharin,oat,cinnamon powder,2.2
+chamomile,little,saccharin,oat,chocolate powder,2.2
+chamomile,little,stevia,,,1.8
+chamomile,little,stevia,,chocolate syrup,2.1
+chamomile,little,stevia,,strawberry syrup,2.1
+chamomile,little,stevia,,caramel syrup,2.1
+chamomile,little,stevia,,hazelnut syrup,2.1
+chamomile,little,stevia,,vanilla syrup,2.1
+chamomile,little,stevia,,cinnamon powder,1.8
+chamomile,little,stevia,,chocolate powder,1.8
+chamomile,little,stevia,fresh,,1.8
+chamomile,little,stevia,fresh,chocolate syrup,2.1
+chamomile,little,stevia,fresh,strawberry syrup,2.1
+chamomile,little,stevia,fresh,caramel syrup,2.1
+chamomile,little,stevia,fresh,hazelnut syrup,2.1
+chamomile,little,stevia,fresh,vanilla syrup,2.1
+chamomile,little,stevia,fresh,cinnamon powder,1.8
+chamomile,little,stevia,fresh,chocolate powder,1.8
+chamomile,little,stevia,evapore,,1.8
+chamomile,little,stevia,evapore,chocolate syrup,2.1
+chamomile,little,stevia,evapore,strawberry syrup,2.1
+chamomile,little,stevia,evapore,caramel syrup,2.1
+chamomile,little,stevia,evapore,hazelnut syrup,2.1
+chamomile,little,stevia,evapore,vanilla syrup,2.1
+chamomile,little,stevia,evapore,cinnamon powder,1.8
+chamomile,little,stevia,evapore,chocolate powder,1.8
+chamomile,little,stevia,almond,,2.2
+chamomile,little,stevia,almond,chocolate syrup,2.5
+chamomile,little,stevia,almond,strawberry syrup,2.5
+chamomile,little,stevia,almond,caramel syrup,2.5
+chamomile,little,stevia,almond,hazelnut syrup,2.5
+chamomile,little,stevia,almond,vanilla syrup,2.5
+chamomile,little,stevia,almond,cinnamon powder,2.2
+chamomile,little,stevia,almond,chocolate powder,2.2
+chamomile,little,stevia,coconut,,2.2
+chamomile,little,stevia,coconut,chocolate syrup,2.5
+chamomile,little,stevia,coconut,strawberry syrup,2.5
+chamomile,little,stevia,coconut,caramel syrup,2.5
+chamomile,little,stevia,coconut,hazelnut syrup,2.5
+chamomile,little,stevia,coconut,vanilla syrup,2.5
+chamomile,little,stevia,coconut,cinnamon powder,2.2
+chamomile,little,stevia,coconut,chocolate powder,2.2
+chamomile,little,stevia,oat,,2.2
+chamomile,little,stevia,oat,chocolate syrup,2.5
+chamomile,little,stevia,oat,strawberry syrup,2.5
+chamomile,little,stevia,oat,caramel syrup,2.5
+chamomile,little,stevia,oat,hazelnut syrup,2.5
+chamomile,little,stevia,oat,vanilla syrup,2.5
+chamomile,little,stevia,oat,cinnamon powder,2.2
+chamomile,little,stevia,oat,chocolate powder,2.2
+chamomile,little,honey,,,2.1
+chamomile,little,honey,,chocolate syrup,2.4
+chamomile,little,honey,,strawberry syrup,2.4
+chamomile,little,honey,,caramel syrup,2.4
+chamomile,little,honey,,hazelnut syrup,2.4
+chamomile,little,honey,,vanilla syrup,2.4
+chamomile,little,honey,,cinnamon powder,2.1
+chamomile,little,honey,,chocolate powder,2.1
+chamomile,little,honey,fresh,,2.1
+chamomile,little,honey,fresh,chocolate syrup,2.4
+chamomile,little,honey,fresh,strawberry syrup,2.4
+chamomile,little,honey,fresh,caramel syrup,2.4
+chamomile,little,honey,fresh,hazelnut syrup,2.4
+chamomile,little,honey,fresh,vanilla syrup,2.4
+chamomile,little,honey,fresh,cinnamon powder,2.1
+chamomile,little,honey,fresh,chocolate powder,2.1
+chamomile,little,honey,evapore,,2.1
+chamomile,little,honey,evapore,chocolate syrup,2.4
+chamomile,little,honey,evapore,strawberry syrup,2.4
+chamomile,little,honey,evapore,caramel syrup,2.4
+chamomile,little,honey,evapore,hazelnut syrup,2.4
+chamomile,little,honey,evapore,vanilla syrup,2.4
+chamomile,little,honey,evapore,cinnamon powder,2.1
+chamomile,little,honey,evapore,chocolate powder,2.1
+chamomile,little,honey,almond,,2.5
+chamomile,little,honey,almond,chocolate syrup,2.8
+chamomile,little,honey,almond,strawberry syrup,2.8
+chamomile,little,honey,almond,caramel syrup,2.8
+chamomile,little,honey,almond,hazelnut syrup,2.8
+chamomile,little,honey,almond,vanilla syrup,2.8
+chamomile,little,honey,almond,cinnamon powder,2.5
+chamomile,little,honey,almond,chocolate powder,2.5
+chamomile,little,honey,coconut,,2.5
+chamomile,little,honey,coconut,chocolate syrup,2.8
+chamomile,little,honey,coconut,strawberry syrup,2.8
+chamomile,little,honey,coconut,caramel syrup,2.8
+chamomile,little,honey,coconut,hazelnut syrup,2.8
+chamomile,little,honey,coconut,vanilla syrup,2.8
+chamomile,little,honey,coconut,cinnamon powder,2.5
+chamomile,little,honey,coconut,chocolate powder,2.5
+chamomile,little,honey,oat,,2.5
+chamomile,little,honey,oat,chocolate syrup,2.8
+chamomile,little,honey,oat,strawberry syrup,2.8
+chamomile,little,honey,oat,caramel syrup,2.8
+chamomile,little,honey,oat,hazelnut syrup,2.8
+chamomile,little,honey,oat,vanilla syrup,2.8
+chamomile,little,honey,oat,cinnamon powder,2.5
+chamomile,little,honey,oat,chocolate powder,2.5
+chamomile,medium,,,,1.8
+chamomile,medium,,,chocolate syrup,2.1
+chamomile,medium,,,strawberry syrup,2.1
+chamomile,medium,,,caramel syrup,2.1
+chamomile,medium,,,hazelnut syrup,2.1
+chamomile,medium,,,vanilla syrup,2.1
+chamomile,medium,,,cinnamon powder,1.8
+chamomile,medium,,,chocolate powder,1.8
+chamomile,medium,,fresh,,1.8
+chamomile,medium,,fresh,chocolate syrup,2.1
+chamomile,medium,,fresh,strawberry syrup,2.1
+chamomile,medium,,fresh,caramel syrup,2.1
+chamomile,medium,,fresh,hazelnut syrup,2.1
+chamomile,medium,,fresh,vanilla syrup,2.1
+chamomile,medium,,fresh,cinnamon powder,1.8
+chamomile,medium,,fresh,chocolate powder,1.8
+chamomile,medium,,evapore,,1.8
+chamomile,medium,,evapore,chocolate syrup,2.1
+chamomile,medium,,evapore,strawberry syrup,2.1
+chamomile,medium,,evapore,caramel syrup,2.1
+chamomile,medium,,evapore,hazelnut syrup,2.1
+chamomile,medium,,evapore,vanilla syrup,2.1
+chamomile,medium,,evapore,cinnamon powder,1.8
+chamomile,medium,,evapore,chocolate powder,1.8
+chamomile,medium,,almond,,2.2
+chamomile,medium,,almond,chocolate syrup,2.5
+chamomile,medium,,almond,strawberry syrup,2.5
+chamomile,medium,,almond,caramel syrup,2.5
+chamomile,medium,,almond,hazelnut syrup,2.5
+chamomile,medium,,almond,vanilla syrup,2.5
+chamomile,medium,,almond,cinnamon powder,2.2
+chamomile,medium,,almond,chocolate powder,2.2
+chamomile,medium,,coconut,,2.2
+chamomile,medium,,coconut,chocolate syrup,2.5
+chamomile,medium,,coconut,strawberry syrup,2.5
+chamomile,medium,,coconut,caramel syrup,2.5
+chamomile,medium,,coconut,hazelnut syrup,2.5
+chamomile,medium,,coconut,vanilla syrup,2.5
+chamomile,medium,,coconut,cinnamon powder,2.2
+chamomile,medium,,coconut,chocolate powder,2.2
+chamomile,medium,,oat,,2.2
+chamomile,medium,,oat,chocolate syrup,2.5
+chamomile,medium,,oat,strawberry syrup,2.5
+chamomile,medium,,oat,caramel syrup,2.5
+chamomile,medium,,oat,hazelnut syrup,2.5
+chamomile,medium,,oat,vanilla syrup,2.5
+chamomile,medium,,oat,cinnamon powder,2.2
+chamomile,medium,,oat,chocolate powder,2.2
+chamomile,medium,white,,,1.8
+chamomile,medium,white,,chocolate syrup,2.1
+chamomile,medium,white,,strawberry syrup,2.1
+chamomile,medium,white,,caramel syrup,2.1
+chamomile,medium,white,,hazelnut syrup,2.1
+chamomile,medium,white,,vanilla syrup,2.1
+chamomile,medium,white,,cinnamon powder,1.8
+chamomile,medium,white,,chocolate powder,1.8
+chamomile,medium,white,fresh,,1.8
+chamomile,medium,white,fresh,chocolate syrup,2.1
+chamomile,medium,white,fresh,strawberry syrup,2.1
+chamomile,medium,white,fresh,caramel syrup,2.1
+chamomile,medium,white,fresh,hazelnut syrup,2.1
+chamomile,medium,white,fresh,vanilla syrup,2.1
+chamomile,medium,white,fresh,cinnamon powder,1.8
+chamomile,medium,white,fresh,chocolate powder,1.8
+chamomile,medium,white,evapore,,1.8
+chamomile,medium,white,evapore,chocolate syrup,2.1
+chamomile,medium,white,evapore,strawberry syrup,2.1
+chamomile,medium,white,evapore,caramel syrup,2.1
+chamomile,medium,white,evapore,hazelnut syrup,2.1
+chamomile,medium,white,evapore,vanilla syrup,2.1
+chamomile,medium,white,evapore,cinnamon powder,1.8
+chamomile,medium,white,evapore,chocolate powder,1.8
+chamomile,medium,white,almond,,2.2
+chamomile,medium,white,almond,chocolate syrup,2.5
+chamomile,medium,white,almond,strawberry syrup,2.5
+chamomile,medium,white,almond,caramel syrup,2.5
+chamomile,medium,white,almond,hazelnut syrup,2.5
+chamomile,medium,white,almond,vanilla syrup,2.5
+chamomile,medium,white,almond,cinnamon powder,2.2
+chamomile,medium,white,almond,chocolate powder,2.2
+chamomile,medium,white,coconut,,2.2
+chamomile,medium,white,coconut,chocolate syrup,2.5
+chamomile,medium,white,coconut,strawberry syrup,2.5
+chamomile,medium,white,coconut,caramel syrup,2.5
+chamomile,medium,white,coconut,hazelnut syrup,2.5
+chamomile,medium,white,coconut,vanilla syrup,2.5
+chamomile,medium,white,coconut,cinnamon powder,2.2
+chamomile,medium,white,coconut,chocolate powder,2.2
+chamomile,medium,white,oat,,2.2
+chamomile,medium,white,oat,chocolate syrup,2.5
+chamomile,medium,white,oat,strawberry syrup,2.5
+chamomile,medium,white,oat,caramel syrup,2.5
+chamomile,medium,white,oat,hazelnut syrup,2.5
+chamomile,medium,white,oat,vanilla syrup,2.5
+chamomile,medium,white,oat,cinnamon powder,2.2
+chamomile,medium,white,oat,chocolate powder,2.2
+chamomile,medium,brown,,,1.8
+chamomile,medium,brown,,chocolate syrup,2.1
+chamomile,medium,brown,,strawberry syrup,2.1
+chamomile,medium,brown,,caramel syrup,2.1
+chamomile,medium,brown,,hazelnut syrup,2.1
+chamomile,medium,brown,,vanilla syrup,2.1
+chamomile,medium,brown,,cinnamon powder,1.8
+chamomile,medium,brown,,chocolate powder,1.8
+chamomile,medium,brown,fresh,,1.8
+chamomile,medium,brown,fresh,chocolate syrup,2.1
+chamomile,medium,brown,fresh,strawberry syrup,2.1
+chamomile,medium,brown,fresh,caramel syrup,2.1
+chamomile,medium,brown,fresh,hazelnut syrup,2.1
+chamomile,medium,brown,fresh,vanilla syrup,2.1
+chamomile,medium,brown,fresh,cinnamon powder,1.8
+chamomile,medium,brown,fresh,chocolate powder,1.8
+chamomile,medium,brown,evapore,,1.8
+chamomile,medium,brown,evapore,chocolate syrup,2.1
+chamomile,medium,brown,evapore,strawberry syrup,2.1
+chamomile,medium,brown,evapore,caramel syrup,2.1
+chamomile,medium,brown,evapore,hazelnut syrup,2.1
+chamomile,medium,brown,evapore,vanilla syrup,2.1
+chamomile,medium,brown,evapore,cinnamon powder,1.8
+chamomile,medium,brown,evapore,chocolate powder,1.8
+chamomile,medium,brown,almond,,2.2
+chamomile,medium,brown,almond,chocolate syrup,2.5
+chamomile,medium,brown,almond,strawberry syrup,2.5
+chamomile,medium,brown,almond,caramel syrup,2.5
+chamomile,medium,brown,almond,hazelnut syrup,2.5
+chamomile,medium,brown,almond,vanilla syrup,2.5
+chamomile,medium,brown,almond,cinnamon powder,2.2
+chamomile,medium,brown,almond,chocolate powder,2.2
+chamomile,medium,brown,coconut,,2.2
+chamomile,medium,brown,coconut,chocolate syrup,2.5
+chamomile,medium,brown,coconut,strawberry syrup,2.5
+chamomile,medium,brown,coconut,caramel syrup,2.5
+chamomile,medium,brown,coconut,hazelnut syrup,2.5
+chamomile,medium,brown,coconut,vanilla syrup,2.5
+chamomile,medium,brown,coconut,cinnamon powder,2.2
+chamomile,medium,brown,coconut,chocolate powder,2.2
+chamomile,medium,brown,oat,,2.2
+chamomile,medium,brown,oat,chocolate syrup,2.5
+chamomile,medium,brown,oat,strawberry syrup,2.5
+chamomile,medium,brown,oat,caramel syrup,2.5
+chamomile,medium,brown,oat,hazelnut syrup,2.5
+chamomile,medium,brown,oat,vanilla syrup,2.5
+chamomile,medium,brown,oat,cinnamon powder,2.2
+chamomile,medium,brown,oat,chocolate powder,2.2
+chamomile,medium,saccharin,,,1.8
+chamomile,medium,saccharin,,chocolate syrup,2.1
+chamomile,medium,saccharin,,strawberry syrup,2.1
+chamomile,medium,saccharin,,caramel syrup,2.1
+chamomile,medium,saccharin,,hazelnut syrup,2.1
+chamomile,medium,saccharin,,vanilla syrup,2.1
+chamomile,medium,saccharin,,cinnamon powder,1.8
+chamomile,medium,saccharin,,chocolate powder,1.8
+chamomile,medium,saccharin,fresh,,1.8
+chamomile,medium,saccharin,fresh,chocolate syrup,2.1
+chamomile,medium,saccharin,fresh,strawberry syrup,2.1
+chamomile,medium,saccharin,fresh,caramel syrup,2.1
+chamomile,medium,saccharin,fresh,hazelnut syrup,2.1
+chamomile,medium,saccharin,fresh,vanilla syrup,2.1
+chamomile,medium,saccharin,fresh,cinnamon powder,1.8
+chamomile,medium,saccharin,fresh,chocolate powder,1.8
+chamomile,medium,saccharin,evapore,,1.8
+chamomile,medium,saccharin,evapore,chocolate syrup,2.1
+chamomile,medium,saccharin,evapore,strawberry syrup,2.1
+chamomile,medium,saccharin,evapore,caramel syrup,2.1
+chamomile,medium,saccharin,evapore,hazelnut syrup,2.1
+chamomile,medium,saccharin,evapore,vanilla syrup,2.1
+chamomile,medium,saccharin,evapore,cinnamon powder,1.8
+chamomile,medium,saccharin,evapore,chocolate powder,1.8
+chamomile,medium,saccharin,almond,,2.2
+chamomile,medium,saccharin,almond,chocolate syrup,2.5
+chamomile,medium,saccharin,almond,strawberry syrup,2.5
+chamomile,medium,saccharin,almond,caramel syrup,2.5
+chamomile,medium,saccharin,almond,hazelnut syrup,2.5
+chamomile,medium,saccharin,almond,vanilla syrup,2.5
+chamomile,medium,saccharin,almond,cinnamon powder,2.2
+chamomile,medium,saccharin,almond,chocolate powder,2.2
+chamomile,medium,saccharin,coconut,,2.2
+chamomile,medium,saccharin,coconut,chocolate syrup,2.5
+chamomile,medium,saccharin,coconut,strawberry syrup,2.5
+chamomile,medium,saccharin,coconut,caramel syrup,2.5
+chamomile,medium,saccharin,coconut,hazelnut syrup,2.5
+chamomile,medium,saccharin,coconut,vanilla syrup,2.5
+chamomile,medium,saccharin,coconut,cinnamon powder,2.2
+chamomile,medium,saccharin,coconut,chocolate powder,2.2
+chamomile,medium,saccharin,oat,,2.2
+chamomile,medium,saccharin,oat,chocolate syrup,2.5
+chamomile,medium,saccharin,oat,strawberry syrup,2.5
+chamomile,medium,saccharin,oat,caramel syrup,2.5
+chamomile,medium,saccharin,oat,hazelnut syrup,2.5
+chamomile,medium,saccharin,oat,vanilla syrup,2.5
+chamomile,medium,saccharin,oat,cinnamon powder,2.2
+chamomile,medium,saccharin,oat,chocolate powder,2.2
+chamomile,medium,stevia,,,1.8
+chamomile,medium,stevia,,chocolate syrup,2.1
+chamomile,medium,stevia,,strawberry syrup,2.1
+chamomile,medium,stevia,,caramel syrup,2.1
+chamomile,medium,stevia,,hazelnut syrup,2.1
+chamomile,medium,stevia,,vanilla syrup,2.1
+chamomile,medium,stevia,,cinnamon powder,1.8
+chamomile,medium,stevia,,chocolate powder,1.8
+chamomile,medium,stevia,fresh,,1.8
+chamomile,medium,stevia,fresh,chocolate syrup,2.1
+chamomile,medium,stevia,fresh,strawberry syrup,2.1
+chamomile,medium,stevia,fresh,caramel syrup,2.1
+chamomile,medium,stevia,fresh,hazelnut syrup,2.1
+chamomile,medium,stevia,fresh,vanilla syrup,2.1
+chamomile,medium,stevia,fresh,cinnamon powder,1.8
+chamomile,medium,stevia,fresh,chocolate powder,1.8
+chamomile,medium,stevia,evapore,,1.8
+chamomile,medium,stevia,evapore,chocolate syrup,2.1
+chamomile,medium,stevia,evapore,strawberry syrup,2.1
+chamomile,medium,stevia,evapore,caramel syrup,2.1
+chamomile,medium,stevia,evapore,hazelnut syrup,2.1
+chamomile,medium,stevia,evapore,vanilla syrup,2.1
+chamomile,medium,stevia,evapore,cinnamon powder,1.8
+chamomile,medium,stevia,evapore,chocolate powder,1.8
+chamomile,medium,stevia,almond,,2.2
+chamomile,medium,stevia,almond,chocolate syrup,2.5
+chamomile,medium,stevia,almond,strawberry syrup,2.5
+chamomile,medium,stevia,almond,caramel syrup,2.5
+chamomile,medium,stevia,almond,hazelnut syrup,2.5
+chamomile,medium,stevia,almond,vanilla syrup,2.5
+chamomile,medium,stevia,almond,cinnamon powder,2.2
+chamomile,medium,stevia,almond,chocolate powder,2.2
+chamomile,medium,stevia,coconut,,2.2
+chamomile,medium,stevia,coconut,chocolate syrup,2.5
+chamomile,medium,stevia,coconut,strawberry syrup,2.5
+chamomile,medium,stevia,coconut,caramel syrup,2.5
+chamomile,medium,stevia,coconut,hazelnut syrup,2.5
+chamomile,medium,stevia,coconut,vanilla syrup,2.5
+chamomile,medium,stevia,coconut,cinnamon powder,2.2
+chamomile,medium,stevia,coconut,chocolate powder,2.2
+chamomile,medium,stevia,oat,,2.2
+chamomile,medium,stevia,oat,chocolate syrup,2.5
+chamomile,medium,stevia,oat,strawberry syrup,2.5
+chamomile,medium,stevia,oat,caramel syrup,2.5
+chamomile,medium,stevia,oat,hazelnut syrup,2.5
+chamomile,medium,stevia,oat,vanilla syrup,2.5
+chamomile,medium,stevia,oat,cinnamon powder,2.2
+chamomile,medium,stevia,oat,chocolate powder,2.2
+chamomile,medium,honey,,,2.1
+chamomile,medium,honey,,chocolate syrup,2.4
+chamomile,medium,honey,,strawberry syrup,2.4
+chamomile,medium,honey,,caramel syrup,2.4
+chamomile,medium,honey,,hazelnut syrup,2.4
+chamomile,medium,honey,,vanilla syrup,2.4
+chamomile,medium,honey,,cinnamon powder,2.1
+chamomile,medium,honey,,chocolate powder,2.1
+chamomile,medium,honey,fresh,,2.1
+chamomile,medium,honey,fresh,chocolate syrup,2.4
+chamomile,medium,honey,fresh,strawberry syrup,2.4
+chamomile,medium,honey,fresh,caramel syrup,2.4
+chamomile,medium,honey,fresh,hazelnut syrup,2.4
+chamomile,medium,honey,fresh,vanilla syrup,2.4
+chamomile,medium,honey,fresh,cinnamon powder,2.1
+chamomile,medium,honey,fresh,chocolate powder,2.1
+chamomile,medium,honey,evapore,,2.1
+chamomile,medium,honey,evapore,chocolate syrup,2.4
+chamomile,medium,honey,evapore,strawberry syrup,2.4
+chamomile,medium,honey,evapore,caramel syrup,2.4
+chamomile,medium,honey,evapore,hazelnut syrup,2.4
+chamomile,medium,honey,evapore,vanilla syrup,2.4
+chamomile,medium,honey,evapore,cinnamon powder,2.1
+chamomile,medium,honey,evapore,chocolate powder,2.1
+chamomile,medium,honey,almond,,2.5
+chamomile,medium,honey,almond,chocolate syrup,2.8
+chamomile,medium,honey,almond,strawberry syrup,2.8
+chamomile,medium,honey,almond,caramel syrup,2.8
+chamomile,medium,honey,almond,hazelnut syrup,2.8
+chamomile,medium,honey,almond,vanilla syrup,2.8
+chamomile,medium,honey,almond,cinnamon powder,2.5
+chamomile,medium,honey,almond,chocolate powder,2.5
+chamomile,medium,honey,coconut,,2.5
+chamomile,medium,honey,coconut,chocolate syrup,2.8
+chamomile,medium,honey,coconut,strawberry syrup,2.8
+chamomile,medium,honey,coconut,caramel syrup,2.8
+chamomile,medium,honey,coconut,hazelnut syrup,2.8
+chamomile,medium,honey,coconut,vanilla syrup,2.8
+chamomile,medium,honey,coconut,cinnamon powder,2.5
+chamomile,medium,honey,coconut,chocolate powder,2.5
+chamomile,medium,honey,oat,,2.5
+chamomile,medium,honey,oat,chocolate syrup,2.8
+chamomile,medium,honey,oat,strawberry syrup,2.8
+chamomile,medium,honey,oat,caramel syrup,2.8
+chamomile,medium,honey,oat,hazelnut syrup,2.8
+chamomile,medium,honey,oat,vanilla syrup,2.8
+chamomile,medium,honey,oat,cinnamon powder,2.5
+chamomile,medium,honey,oat,chocolate powder,2.5
+chamomile,medium-to-sweet,,,,1.8
+chamomile,medium-to-sweet,,,chocolate syrup,2.1
+chamomile,medium-to-sweet,,,strawberry syrup,2.1
+chamomile,medium-to-sweet,,,caramel syrup,2.1
+chamomile,medium-to-sweet,,,hazelnut syrup,2.1
+chamomile,medium-to-sweet,,,vanilla syrup,2.1
+chamomile,medium-to-sweet,,,cinnamon powder,1.8
+chamomile,medium-to-sweet,,,chocolate powder,1.8
+chamomile,medium-to-sweet,,fresh,,1.8
+chamomile,medium-to-sweet,,fresh,chocolate syrup,2.1
+chamomile,medium-to-sweet,,fresh,strawberry syrup,2.1
+chamomile,medium-to-sweet,,fresh,caramel syrup,2.1
+chamomile,medium-to-sweet,,fresh,hazelnut syrup,2.1
+chamomile,medium-to-sweet,,fresh,vanilla syrup,2.1
+chamomile,medium-to-sweet,,fresh,cinnamon powder,1.8
+chamomile,medium-to-sweet,,fresh,chocolate powder,1.8
+chamomile,medium-to-sweet,,evapore,,1.8
+chamomile,medium-to-sweet,,evapore,chocolate syrup,2.1
+chamomile,medium-to-sweet,,evapore,strawberry syrup,2.1
+chamomile,medium-to-sweet,,evapore,caramel syrup,2.1
+chamomile,medium-to-sweet,,evapore,hazelnut syrup,2.1
+chamomile,medium-to-sweet,,evapore,vanilla syrup,2.1
+chamomile,medium-to-sweet,,evapore,cinnamon powder,1.8
+chamomile,medium-to-sweet,,evapore,chocolate powder,1.8
+chamomile,medium-to-sweet,,almond,,2.2
+chamomile,medium-to-sweet,,almond,chocolate syrup,2.5
+chamomile,medium-to-sweet,,almond,strawberry syrup,2.5
+chamomile,medium-to-sweet,,almond,caramel syrup,2.5
+chamomile,medium-to-sweet,,almond,hazelnut syrup,2.5
+chamomile,medium-to-sweet,,almond,vanilla syrup,2.5
+chamomile,medium-to-sweet,,almond,cinnamon powder,2.2
+chamomile,medium-to-sweet,,almond,chocolate powder,2.2
+chamomile,medium-to-sweet,,coconut,,2.2
+chamomile,medium-to-sweet,,coconut,chocolate syrup,2.5
+chamomile,medium-to-sweet,,coconut,strawberry syrup,2.5
+chamomile,medium-to-sweet,,coconut,caramel syrup,2.5
+chamomile,medium-to-sweet,,coconut,hazelnut syrup,2.5
+chamomile,medium-to-sweet,,coconut,vanilla syrup,2.5
+chamomile,medium-to-sweet,,coconut,cinnamon powder,2.2
+chamomile,medium-to-sweet,,coconut,chocolate powder,2.2
+chamomile,medium-to-sweet,,oat,,2.2
+chamomile,medium-to-sweet,,oat,chocolate syrup,2.5
+chamomile,medium-to-sweet,,oat,strawberry syrup,2.5
+chamomile,medium-to-sweet,,oat,caramel syrup,2.5
+chamomile,medium-to-sweet,,oat,hazelnut syrup,2.5
+chamomile,medium-to-sweet,,oat,vanilla syrup,2.5
+chamomile,medium-to-sweet,,oat,cinnamon powder,2.2
+chamomile,medium-to-sweet,,oat,chocolate powder,2.2
+chamomile,medium-to-sweet,white,,,1.8
+chamomile,medium-to-sweet,white,,chocolate syrup,2.1
+chamomile,medium-to-sweet,white,,strawberry syrup,2.1
+chamomile,medium-to-sweet,white,,caramel syrup,2.1
+chamomile,medium-to-sweet,white,,hazelnut syrup,2.1
+chamomile,medium-to-sweet,white,,vanilla syrup,2.1
+chamomile,medium-to-sweet,white,,cinnamon powder,1.8
+chamomile,medium-to-sweet,white,,chocolate powder,1.8
+chamomile,medium-to-sweet,white,fresh,,1.8
+chamomile,medium-to-sweet,white,fresh,chocolate syrup,2.1
+chamomile,medium-to-sweet,white,fresh,strawberry syrup,2.1
+chamomile,medium-to-sweet,white,fresh,caramel syrup,2.1
+chamomile,medium-to-sweet,white,fresh,hazelnut syrup,2.1
+chamomile,medium-to-sweet,white,fresh,vanilla syrup,2.1
+chamomile,medium-to-sweet,white,fresh,cinnamon powder,1.8
+chamomile,medium-to-sweet,white,fresh,chocolate powder,1.8
+chamomile,medium-to-sweet,white,evapore,,1.8
+chamomile,medium-to-sweet,white,evapore,chocolate syrup,2.1
+chamomile,medium-to-sweet,white,evapore,strawberry syrup,2.1
+chamomile,medium-to-sweet,white,evapore,caramel syrup,2.1
+chamomile,medium-to-sweet,white,evapore,hazelnut syrup,2.1
+chamomile,medium-to-sweet,white,evapore,vanilla syrup,2.1
+chamomile,medium-to-sweet,white,evapore,cinnamon powder,1.8
+chamomile,medium-to-sweet,white,evapore,chocolate powder,1.8
+chamomile,medium-to-sweet,white,almond,,2.2
+chamomile,medium-to-sweet,white,almond,chocolate syrup,2.5
+chamomile,medium-to-sweet,white,almond,strawberry syrup,2.5
+chamomile,medium-to-sweet,white,almond,caramel syrup,2.5
+chamomile,medium-to-sweet,white,almond,hazelnut syrup,2.5
+chamomile,medium-to-sweet,white,almond,vanilla syrup,2.5
+chamomile,medium-to-sweet,white,almond,cinnamon powder,2.2
+chamomile,medium-to-sweet,white,almond,chocolate powder,2.2
+chamomile,medium-to-sweet,white,coconut,,2.2
+chamomile,medium-to-sweet,white,coconut,chocolate syrup,2.5
+chamomile,medium-to-sweet,white,coconut,strawberry syrup,2.5
+chamomile,medium-to-sweet,white,coconut,caramel syrup,2.5
+chamomile,medium-to-sweet,white,coconut,hazelnut syrup,2.5
+chamomile,medium-to-sweet,white,coconut,vanilla syrup,2.5
+chamomile,medium-to-sweet,white,coconut,cinnamon powder,2.2
+chamomile,medium-to-sweet,white,coconut,chocolate powder,2.2
+chamomile,medium-to-sweet,white,oat,,2.2
+chamomile,medium-to-sweet,white,oat,chocolate syrup,2.5
+chamomile,medium-to-sweet,white,oat,strawberry syrup,2.5
+chamomile,medium-to-sweet,white,oat,caramel syrup,2.5
+chamomile,medium-to-sweet,white,oat,hazelnut syrup,2.5
+chamomile,medium-to-sweet,white,oat,vanilla syrup,2.5
+chamomile,medium-to-sweet,white,oat,cinnamon powder,2.2
+chamomile,medium-to-sweet,white,oat,chocolate powder,2.2
+chamomile,medium-to-sweet,brown,,,1.8
+chamomile,medium-to-sweet,brown,,chocolate syrup,2.1
+chamomile,medium-to-sweet,brown,,strawberry syrup,2.1
+chamomile,medium-to-sweet,brown,,caramel syrup,2.1
+chamomile,medium-to-sweet,brown,,hazelnut syrup,2.1
+chamomile,medium-to-sweet,brown,,vanilla syrup,2.1
+chamomile,medium-to-sweet,brown,,cinnamon powder,1.8
+chamomile,medium-to-sweet,brown,,chocolate powder,1.8
+chamomile,medium-to-sweet,brown,fresh,,1.8
+chamomile,medium-to-sweet,brown,fresh,chocolate syrup,2.1
+chamomile,medium-to-sweet,brown,fresh,strawberry syrup,2.1
+chamomile,medium-to-sweet,brown,fresh,caramel syrup,2.1
+chamomile,medium-to-sweet,brown,fresh,hazelnut syrup,2.1
+chamomile,medium-to-sweet,brown,fresh,vanilla syrup,2.1
+chamomile,medium-to-sweet,brown,fresh,cinnamon powder,1.8
+chamomile,medium-to-sweet,brown,fresh,chocolate powder,1.8
+chamomile,medium-to-sweet,brown,evapore,,1.8
+chamomile,medium-to-sweet,brown,evapore,chocolate syrup,2.1
+chamomile,medium-to-sweet,brown,evapore,strawberry syrup,2.1
+chamomile,medium-to-sweet,brown,evapore,caramel syrup,2.1
+chamomile,medium-to-sweet,brown,evapore,hazelnut syrup,2.1
+chamomile,medium-to-sweet,brown,evapore,vanilla syrup,2.1
+chamomile,medium-to-sweet,brown,evapore,cinnamon powder,1.8
+chamomile,medium-to-sweet,brown,evapore,chocolate powder,1.8
+chamomile,medium-to-sweet,brown,almond,,2.2
+chamomile,medium-to-sweet,brown,almond,chocolate syrup,2.5
+chamomile,medium-to-sweet,brown,almond,strawberry syrup,2.5
+chamomile,medium-to-sweet,brown,almond,caramel syrup,2.5
+chamomile,medium-to-sweet,brown,almond,hazelnut syrup,2.5
+chamomile,medium-to-sweet,brown,almond,vanilla syrup,2.5
+chamomile,medium-to-sweet,brown,almond,cinnamon powder,2.2
+chamomile,medium-to-sweet,brown,almond,chocolate powder,2.2
+chamomile,medium-to-sweet,brown,coconut,,2.2
+chamomile,medium-to-sweet,brown,coconut,chocolate syrup,2.5
+chamomile,medium-to-sweet,brown,coconut,strawberry syrup,2.5
+chamomile,medium-to-sweet,brown,coconut,caramel syrup,2.5
+chamomile,medium-to-sweet,brown,coconut,hazelnut syrup,2.5
+chamomile,medium-to-sweet,brown,coconut,vanilla syrup,2.5
+chamomile,medium-to-sweet,brown,coconut,cinnamon powder,2.2
+chamomile,medium-to-sweet,brown,coconut,chocolate powder,2.2
+chamomile,medium-to-sweet,brown,oat,,2.2
+chamomile,medium-to-sweet,brown,oat,chocolate syrup,2.5
+chamomile,medium-to-sweet,brown,oat,strawberry syrup,2.5
+chamomile,medium-to-sweet,brown,oat,caramel syrup,2.5
+chamomile,medium-to-sweet,brown,oat,hazelnut syrup,2.5
+chamomile,medium-to-sweet,brown,oat,vanilla syrup,2.5
+chamomile,medium-to-sweet,brown,oat,cinnamon powder,2.2
+chamomile,medium-to-sweet,brown,oat,chocolate powder,2.2
+chamomile,medium-to-sweet,saccharin,,,1.8
+chamomile,medium-to-sweet,saccharin,,chocolate syrup,2.1
+chamomile,medium-to-sweet,saccharin,,strawberry syrup,2.1
+chamomile,medium-to-sweet,saccharin,,caramel syrup,2.1
+chamomile,medium-to-sweet,saccharin,,hazelnut syrup,2.1
+chamomile,medium-to-sweet,saccharin,,vanilla syrup,2.1
+chamomile,medium-to-sweet,saccharin,,cinnamon powder,1.8
+chamomile,medium-to-sweet,saccharin,,chocolate powder,1.8
+chamomile,medium-to-sweet,saccharin,fresh,,1.8
+chamomile,medium-to-sweet,saccharin,fresh,chocolate syrup,2.1
+chamomile,medium-to-sweet,saccharin,fresh,strawberry syrup,2.1
+chamomile,medium-to-sweet,saccharin,fresh,caramel syrup,2.1
+chamomile,medium-to-sweet,saccharin,fresh,hazelnut syrup,2.1
+chamomile,medium-to-sweet,saccharin,fresh,vanilla syrup,2.1
+chamomile,medium-to-sweet,saccharin,fresh,cinnamon powder,1.8
+chamomile,medium-to-sweet,saccharin,fresh,chocolate powder,1.8
+chamomile,medium-to-sweet,saccharin,evapore,,1.8
+chamomile,medium-to-sweet,saccharin,evapore,chocolate syrup,2.1
+chamomile,medium-to-sweet,saccharin,evapore,strawberry syrup,2.1
+chamomile,medium-to-sweet,saccharin,evapore,caramel syrup,2.1
+chamomile,medium-to-sweet,saccharin,evapore,hazelnut syrup,2.1
+chamomile,medium-to-sweet,saccharin,evapore,vanilla syrup,2.1
+chamomile,medium-to-sweet,saccharin,evapore,cinnamon powder,1.8
+chamomile,medium-to-sweet,saccharin,evapore,chocolate powder,1.8
+chamomile,medium-to-sweet,saccharin,almond,,2.2
+chamomile,medium-to-sweet,saccharin,almond,chocolate syrup,2.5
+chamomile,medium-to-sweet,saccharin,almond,strawberry syrup,2.5
+chamomile,medium-to-sweet,saccharin,almond,caramel syrup,2.5
+chamomile,medium-to-sweet,saccharin,almond,hazelnut syrup,2.5
+chamomile,medium-to-sweet,saccharin,almond,vanilla syrup,2.5
+chamomile,medium-to-sweet,saccharin,almond,cinnamon powder,2.2
+chamomile,medium-to-sweet,saccharin,almond,chocolate powder,2.2
+chamomile,medium-to-sweet,saccharin,coconut,,2.2
+chamomile,medium-to-sweet,saccharin,coconut,chocolate syrup,2.5
+chamomile,medium-to-sweet,saccharin,coconut,strawberry syrup,2.5
+chamomile,medium-to-sweet,saccharin,coconut,caramel syrup,2.5
+chamomile,medium-to-sweet,saccharin,coconut,hazelnut syrup,2.5
+chamomile,medium-to-sweet,saccharin,coconut,vanilla syrup,2.5
+chamomile,medium-to-sweet,saccharin,coconut,cinnamon powder,2.2
+chamomile,medium-to-sweet,saccharin,coconut,chocolate powder,2.2
+chamomile,medium-to-sweet,saccharin,oat,,2.2
+chamomile,medium-to-sweet,saccharin,oat,chocolate syrup,2.5
+chamomile,medium-to-sweet,saccharin,oat,strawberry syrup,2.5
+chamomile,medium-to-sweet,saccharin,oat,caramel syrup,2.5
+chamomile,medium-to-sweet,saccharin,oat,hazelnut syrup,2.5
+chamomile,medium-to-sweet,saccharin,oat,vanilla syrup,2.5
+chamomile,medium-to-sweet,saccharin,oat,cinnamon powder,2.2
+chamomile,medium-to-sweet,saccharin,oat,chocolate powder,2.2
+chamomile,medium-to-sweet,stevia,,,1.8
+chamomile,medium-to-sweet,stevia,,chocolate syrup,2.1
+chamomile,medium-to-sweet,stevia,,strawberry syrup,2.1
+chamomile,medium-to-sweet,stevia,,caramel syrup,2.1
+chamomile,medium-to-sweet,stevia,,hazelnut syrup,2.1
+chamomile,medium-to-sweet,stevia,,vanilla syrup,2.1
+chamomile,medium-to-sweet,stevia,,cinnamon powder,1.8
+chamomile,medium-to-sweet,stevia,,chocolate powder,1.8
+chamomile,medium-to-sweet,stevia,fresh,,1.8
+chamomile,medium-to-sweet,stevia,fresh,chocolate syrup,2.1
+chamomile,medium-to-sweet,stevia,fresh,strawberry syrup,2.1
+chamomile,medium-to-sweet,stevia,fresh,caramel syrup,2.1
+chamomile,medium-to-sweet,stevia,fresh,hazelnut syrup,2.1
+chamomile,medium-to-sweet,stevia,fresh,vanilla syrup,2.1
+chamomile,medium-to-sweet,stevia,fresh,cinnamon powder,1.8
+chamomile,medium-to-sweet,stevia,fresh,chocolate powder,1.8
+chamomile,medium-to-sweet,stevia,evapore,,1.8
+chamomile,medium-to-sweet,stevia,evapore,chocolate syrup,2.1
+chamomile,medium-to-sweet,stevia,evapore,strawberry syrup,2.1
+chamomile,medium-to-sweet,stevia,evapore,caramel syrup,2.1
+chamomile,medium-to-sweet,stevia,evapore,hazelnut syrup,2.1
+chamomile,medium-to-sweet,stevia,evapore,vanilla syrup,2.1
+chamomile,medium-to-sweet,stevia,evapore,cinnamon powder,1.8
+chamomile,medium-to-sweet,stevia,evapore,chocolate powder,1.8
+chamomile,medium-to-sweet,stevia,almond,,2.2
+chamomile,medium-to-sweet,stevia,almond,chocolate syrup,2.5
+chamomile,medium-to-sweet,stevia,almond,strawberry syrup,2.5
+chamomile,medium-to-sweet,stevia,almond,caramel syrup,2.5
+chamomile,medium-to-sweet,stevia,almond,hazelnut syrup,2.5
+chamomile,medium-to-sweet,stevia,almond,vanilla syrup,2.5
+chamomile,medium-to-sweet,stevia,almond,cinnamon powder,2.2
+chamomile,medium-to-sweet,stevia,almond,chocolate powder,2.2
+chamomile,medium-to-sweet,stevia,coconut,,2.2
+chamomile,medium-to-sweet,stevia,coconut,chocolate syrup,2.5
+chamomile,medium-to-sweet,stevia,coconut,strawberry syrup,2.5
+chamomile,medium-to-sweet,stevia,coconut,caramel syrup,2.5
+chamomile,medium-to-sweet,stevia,coconut,hazelnut syrup,2.5
+chamomile,medium-to-sweet,stevia,coconut,vanilla syrup,2.5
+chamomile,medium-to-sweet,stevia,coconut,cinnamon powder,2.2
+chamomile,medium-to-sweet,stevia,coconut,chocolate powder,2.2
+chamomile,medium-to-sweet,stevia,oat,,2.2
+chamomile,medium-to-sweet,stevia,oat,chocolate syrup,2.5
+chamomile,medium-to-sweet,stevia,oat,strawberry syrup,2.5
+chamomile,medium-to-sweet,stevia,oat,caramel syrup,2.5
+chamomile,medium-to-sweet,stevia,oat,hazelnut syrup,2.5
+chamomile,medium-to-sweet,stevia,oat,vanilla syrup,2.5
+chamomile,medium-to-sweet,stevia,oat,cinnamon powder,2.2
+chamomile,medium-to-sweet,stevia,oat,chocolate powder,2.2
+chamomile,medium-to-sweet,honey,,,2.1
+chamomile,medium-to-sweet,honey,,chocolate syrup,2.4
+chamomile,medium-to-sweet,honey,,strawberry syrup,2.4
+chamomile,medium-to-sweet,honey,,caramel syrup,2.4
+chamomile,medium-to-sweet,honey,,hazelnut syrup,2.4
+chamomile,medium-to-sweet,honey,,vanilla syrup,2.4
+chamomile,medium-to-sweet,honey,,cinnamon powder,2.1
+chamomile,medium-to-sweet,honey,,chocolate powder,2.1
+chamomile,medium-to-sweet,honey,fresh,,2.1
+chamomile,medium-to-sweet,honey,fresh,chocolate syrup,2.4
+chamomile,medium-to-sweet,honey,fresh,strawberry syrup,2.4
+chamomile,medium-to-sweet,honey,fresh,caramel syrup,2.4
+chamomile,medium-to-sweet,honey,fresh,hazelnut syrup,2.4
+chamomile,medium-to-sweet,honey,fresh,vanilla syrup,2.4
+chamomile,medium-to-sweet,honey,fresh,cinnamon powder,2.1
+chamomile,medium-to-sweet,honey,fresh,chocolate powder,2.1
+chamomile,medium-to-sweet,honey,evapore,,2.1
+chamomile,medium-to-sweet,honey,evapore,chocolate syrup,2.4
+chamomile,medium-to-sweet,honey,evapore,strawberry syrup,2.4
+chamomile,medium-to-sweet,honey,evapore,caramel syrup,2.4
+chamomile,medium-to-sweet,honey,evapore,hazelnut syrup,2.4
+chamomile,medium-to-sweet,honey,evapore,vanilla syrup,2.4
+chamomile,medium-to-sweet,honey,evapore,cinnamon powder,2.1
+chamomile,medium-to-sweet,honey,evapore,chocolate powder,2.1
+chamomile,medium-to-sweet,honey,almond,,2.5
+chamomile,medium-to-sweet,honey,almond,chocolate syrup,2.8
+chamomile,medium-to-sweet,honey,almond,strawberry syrup,2.8
+chamomile,medium-to-sweet,honey,almond,caramel syrup,2.8
+chamomile,medium-to-sweet,honey,almond,hazelnut syrup,2.8
+chamomile,medium-to-sweet,honey,almond,vanilla syrup,2.8
+chamomile,medium-to-sweet,honey,almond,cinnamon powder,2.5
+chamomile,medium-to-sweet,honey,almond,chocolate powder,2.5
+chamomile,medium-to-sweet,honey,coconut,,2.5
+chamomile,medium-to-sweet,honey,coconut,chocolate syrup,2.8
+chamomile,medium-to-sweet,honey,coconut,strawberry syrup,2.8
+chamomile,medium-to-sweet,honey,coconut,caramel syrup,2.8
+chamomile,medium-to-sweet,honey,coconut,hazelnut syrup,2.8
+chamomile,medium-to-sweet,honey,coconut,vanilla syrup,2.8
+chamomile,medium-to-sweet,honey,coconut,cinnamon powder,2.5
+chamomile,medium-to-sweet,honey,coconut,chocolate powder,2.5
+chamomile,medium-to-sweet,honey,oat,,2.5
+chamomile,medium-to-sweet,honey,oat,chocolate syrup,2.8
+chamomile,medium-to-sweet,honey,oat,strawberry syrup,2.8
+chamomile,medium-to-sweet,honey,oat,caramel syrup,2.8
+chamomile,medium-to-sweet,honey,oat,hazelnut syrup,2.8
+chamomile,medium-to-sweet,honey,oat,vanilla syrup,2.8
+chamomile,medium-to-sweet,honey,oat,cinnamon powder,2.5
+chamomile,medium-to-sweet,honey,oat,chocolate powder,2.5
+chamomile,sweet,,,,1.8
+chamomile,sweet,,,chocolate syrup,2.1
+chamomile,sweet,,,strawberry syrup,2.1
+chamomile,sweet,,,caramel syrup,2.1
+chamomile,sweet,,,hazelnut syrup,2.1
+chamomile,sweet,,,vanilla syrup,2.1
+chamomile,sweet,,,cinnamon powder,1.8
+chamomile,sweet,,,chocolate powder,1.8
+chamomile,sweet,,fresh,,1.8
+chamomile,sweet,,fresh,chocolate syrup,2.1
+chamomile,sweet,,fresh,strawberry syrup,2.1
+chamomile,sweet,,fresh,caramel syrup,2.1
+chamomile,sweet,,fresh,hazelnut syrup,2.1
+chamomile,sweet,,fresh,vanilla syrup,2.1
+chamomile,sweet,,fresh,cinnamon powder,1.8
+chamomile,sweet,,fresh,chocolate powder,1.8
+chamomile,sweet,,evapore,,1.8
+chamomile,sweet,,evapore,chocolate syrup,2.1
+chamomile,sweet,,evapore,strawberry syrup,2.1
+chamomile,sweet,,evapore,caramel syrup,2.1
+chamomile,sweet,,evapore,hazelnut syrup,2.1
+chamomile,sweet,,evapore,vanilla syrup,2.1
+chamomile,sweet,,evapore,cinnamon powder,1.8
+chamomile,sweet,,evapore,chocolate powder,1.8
+chamomile,sweet,,almond,,2.2
+chamomile,sweet,,almond,chocolate syrup,2.5
+chamomile,sweet,,almond,strawberry syrup,2.5
+chamomile,sweet,,almond,caramel syrup,2.5
+chamomile,sweet,,almond,hazelnut syrup,2.5
+chamomile,sweet,,almond,vanilla syrup,2.5
+chamomile,sweet,,almond,cinnamon powder,2.2
+chamomile,sweet,,almond,chocolate powder,2.2
+chamomile,sweet,,coconut,,2.2
+chamomile,sweet,,coconut,chocolate syrup,2.5
+chamomile,sweet,,coconut,strawberry syrup,2.5
+chamomile,sweet,,coconut,caramel syrup,2.5
+chamomile,sweet,,coconut,hazelnut syrup,2.5
+chamomile,sweet,,coconut,vanilla syrup,2.5
+chamomile,sweet,,coconut,cinnamon powder,2.2
+chamomile,sweet,,coconut,chocolate powder,2.2
+chamomile,sweet,,oat,,2.2
+chamomile,sweet,,oat,chocolate syrup,2.5
+chamomile,sweet,,oat,strawberry syrup,2.5
+chamomile,sweet,,oat,caramel syrup,2.5
+chamomile,sweet,,oat,hazelnut syrup,2.5
+chamomile,sweet,,oat,vanilla syrup,2.5
+chamomile,sweet,,oat,cinnamon powder,2.2
+chamomile,sweet,,oat,chocolate powder,2.2
+chamomile,sweet,white,,,1.8
+chamomile,sweet,white,,chocolate syrup,2.1
+chamomile,sweet,white,,strawberry syrup,2.1
+chamomile,sweet,white,,caramel syrup,2.1
+chamomile,sweet,white,,hazelnut syrup,2.1
+chamomile,sweet,white,,vanilla syrup,2.1
+chamomile,sweet,white,,cinnamon powder,1.8
+chamomile,sweet,white,,chocolate powder,1.8
+chamomile,sweet,white,fresh,,1.8
+chamomile,sweet,white,fresh,chocolate syrup,2.1
+chamomile,sweet,white,fresh,strawberry syrup,2.1
+chamomile,sweet,white,fresh,caramel syrup,2.1
+chamomile,sweet,white,fresh,hazelnut syrup,2.1
+chamomile,sweet,white,fresh,vanilla syrup,2.1
+chamomile,sweet,white,fresh,cinnamon powder,1.8
+chamomile,sweet,white,fresh,chocolate powder,1.8
+chamomile,sweet,white,evapore,,1.8
+chamomile,sweet,white,evapore,chocolate syrup,2.1
+chamomile,sweet,white,evapore,strawberry syrup,2.1
+chamomile,sweet,white,evapore,caramel syrup,2.1
+chamomile,sweet,white,evapore,hazelnut syrup,2.1
+chamomile,sweet,white,evapore,vanilla syrup,2.1
+chamomile,sweet,white,evapore,cinnamon powder,1.8
+chamomile,sweet,white,evapore,chocolate powder,1.8
+chamomile,sweet,white,almond,,2.2
+chamomile,sweet,white,almond,chocolate syrup,2.5
+chamomile,sweet,white,almond,strawberry syrup,2.5
+chamomile,sweet,white,almond,caramel syrup,2.5
+chamomile,sweet,white,almond,hazelnut syrup,2.5
+chamomile,sweet,white,almond,vanilla syrup,2.5
+chamomile,sweet,white,almond,cinnamon powder,2.2
+chamomile,sweet,white,almond,chocolate powder,2.2
+chamomile,sweet,white,coconut,,2.2
+chamomile,sweet,white,coconut,chocolate syrup,2.5
+chamomile,sweet,white,coconut,strawberry syrup,2.5
+chamomile,sweet,white,coconut,caramel syrup,2.5
+chamomile,sweet,white,coconut,hazelnut syrup,2.5
+chamomile,sweet,white,coconut,vanilla syrup,2.5
+chamomile,sweet,white,coconut,cinnamon powder,2.2
+chamomile,sweet,white,coconut,chocolate powder,2.2
+chamomile,sweet,white,oat,,2.2
+chamomile,sweet,white,oat,chocolate syrup,2.5
+chamomile,sweet,white,oat,strawberry syrup,2.5
+chamomile,sweet,white,oat,caramel syrup,2.5
+chamomile,sweet,white,oat,hazelnut syrup,2.5
+chamomile,sweet,white,oat,vanilla syrup,2.5
+chamomile,sweet,white,oat,cinnamon powder,2.2
+chamomile,sweet,white,oat,chocolate powder,2.2
+chamomile,sweet,brown,,,1.8
+chamomile,sweet,brown,,chocolate syrup,2.1
+chamomile,sweet,brown,,strawberry syrup,2.1
+chamomile,sweet,brown,,caramel syrup,2.1
+chamomile,sweet,brown,,hazelnut syrup,2.1
+chamomile,sweet,brown,,vanilla syrup,2.1
+chamomile,sweet,brown,,cinnamon powder,1.8
+chamomile,sweet,brown,,chocolate powder,1.8
+chamomile,sweet,brown,fresh,,1.8
+chamomile,sweet,brown,fresh,chocolate syrup,2.1
+chamomile,sweet,brown,fresh,strawberry syrup,2.1
+chamomile,sweet,brown,fresh,caramel syrup,2.1
+chamomile,sweet,brown,fresh,hazelnut syrup,2.1
+chamomile,sweet,brown,fresh,vanilla syrup,2.1
+chamomile,sweet,brown,fresh,cinnamon powder,1.8
+chamomile,sweet,brown,fresh,chocolate powder,1.8
+chamomile,sweet,brown,evapore,,1.8
+chamomile,sweet,brown,evapore,chocolate syrup,2.1
+chamomile,sweet,brown,evapore,strawberry syrup,2.1
+chamomile,sweet,brown,evapore,caramel syrup,2.1
+chamomile,sweet,brown,evapore,hazelnut syrup,2.1
+chamomile,sweet,brown,evapore,vanilla syrup,2.1
+chamomile,sweet,brown,evapore,cinnamon powder,1.8
+chamomile,sweet,brown,evapore,chocolate powder,1.8
+chamomile,sweet,brown,almond,,2.2
+chamomile,sweet,brown,almond,chocolate syrup,2.5
+chamomile,sweet,brown,almond,strawberry syrup,2.5
+chamomile,sweet,brown,almond,caramel syrup,2.5
+chamomile,sweet,brown,almond,hazelnut syrup,2.5
+chamomile,sweet,brown,almond,vanilla syrup,2.5
+chamomile,sweet,brown,almond,cinnamon powder,2.2
+chamomile,sweet,brown,almond,chocolate powder,2.2
+chamomile,sweet,brown,coconut,,2.2
+chamomile,sweet,brown,coconut,chocolate syrup,2.5
+chamomile,sweet,brown,coconut,strawberry syrup,2.5
+chamomile,sweet,brown,coconut,caramel syrup,2.5
+chamomile,sweet,brown,coconut,hazelnut syrup,2.5
+chamomile,sweet,brown,coconut,vanilla syrup,2.5
+chamomile,sweet,brown,coconut,cinnamon powder,2.2
+chamomile,sweet,brown,coconut,chocolate powder,2.2
+chamomile,sweet,brown,oat,,2.2
+chamomile,sweet,brown,oat,chocolate syrup,2.5
+chamomile,sweet,brown,oat,strawberry syrup,2.5
+chamomile,sweet,brown,oat,caramel syrup,2.5
+chamomile,sweet,brown,oat,hazelnut syrup,2.5
+chamomile,sweet,brown,oat,vanilla syrup,2.5
+chamomile,sweet,brown,oat,cinnamon powder,2.2
+chamomile,sweet,brown,oat,chocolate powder,2.2
+chamomile,sweet,saccharin,,,1.8
+chamomile,sweet,saccharin,,chocolate syrup,2.1
+chamomile,sweet,saccharin,,strawberry syrup,2.1
+chamomile,sweet,saccharin,,caramel syrup,2.1
+chamomile,sweet,saccharin,,hazelnut syrup,2.1
+chamomile,sweet,saccharin,,vanilla syrup,2.1
+chamomile,sweet,saccharin,,cinnamon powder,1.8
+chamomile,sweet,saccharin,,chocolate powder,1.8
+chamomile,sweet,saccharin,fresh,,1.8
+chamomile,sweet,saccharin,fresh,chocolate syrup,2.1
+chamomile,sweet,saccharin,fresh,strawberry syrup,2.1
+chamomile,sweet,saccharin,fresh,caramel syrup,2.1
+chamomile,sweet,saccharin,fresh,hazelnut syrup,2.1
+chamomile,sweet,saccharin,fresh,vanilla syrup,2.1
+chamomile,sweet,saccharin,fresh,cinnamon powder,1.8
+chamomile,sweet,saccharin,fresh,chocolate powder,1.8
+chamomile,sweet,saccharin,evapore,,1.8
+chamomile,sweet,saccharin,evapore,chocolate syrup,2.1
+chamomile,sweet,saccharin,evapore,strawberry syrup,2.1
+chamomile,sweet,saccharin,evapore,caramel syrup,2.1
+chamomile,sweet,saccharin,evapore,hazelnut syrup,2.1
+chamomile,sweet,saccharin,evapore,vanilla syrup,2.1
+chamomile,sweet,saccharin,evapore,cinnamon powder,1.8
+chamomile,sweet,saccharin,evapore,chocolate powder,1.8
+chamomile,sweet,saccharin,almond,,2.2
+chamomile,sweet,saccharin,almond,chocolate syrup,2.5
+chamomile,sweet,saccharin,almond,strawberry syrup,2.5
+chamomile,sweet,saccharin,almond,caramel syrup,2.5
+chamomile,sweet,saccharin,almond,hazelnut syrup,2.5
+chamomile,sweet,saccharin,almond,vanilla syrup,2.5
+chamomile,sweet,saccharin,almond,cinnamon powder,2.2
+chamomile,sweet,saccharin,almond,chocolate powder,2.2
+chamomile,sweet,saccharin,coconut,,2.2
+chamomile,sweet,saccharin,coconut,chocolate syrup,2.5
+chamomile,sweet,saccharin,coconut,strawberry syrup,2.5
+chamomile,sweet,saccharin,coconut,caramel syrup,2.5
+chamomile,sweet,saccharin,coconut,hazelnut syrup,2.5
+chamomile,sweet,saccharin,coconut,vanilla syrup,2.5
+chamomile,sweet,saccharin,coconut,cinnamon powder,2.2
+chamomile,sweet,saccharin,coconut,chocolate powder,2.2
+chamomile,sweet,saccharin,oat,,2.2
+chamomile,sweet,saccharin,oat,chocolate syrup,2.5
+chamomile,sweet,saccharin,oat,strawberry syrup,2.5
+chamomile,sweet,saccharin,oat,caramel syrup,2.5
+chamomile,sweet,saccharin,oat,hazelnut syrup,2.5
+chamomile,sweet,saccharin,oat,vanilla syrup,2.5
+chamomile,sweet,saccharin,oat,cinnamon powder,2.2
+chamomile,sweet,saccharin,oat,chocolate powder,2.2
+chamomile,sweet,stevia,,,1.8
+chamomile,sweet,stevia,,chocolate syrup,2.1
+chamomile,sweet,stevia,,strawberry syrup,2.1
+chamomile,sweet,stevia,,caramel syrup,2.1
+chamomile,sweet,stevia,,hazelnut syrup,2.1
+chamomile,sweet,stevia,,vanilla syrup,2.1
+chamomile,sweet,stevia,,cinnamon powder,1.8
+chamomile,sweet,stevia,,chocolate powder,1.8
+chamomile,sweet,stevia,fresh,,1.8
+chamomile,sweet,stevia,fresh,chocolate syrup,2.1
+chamomile,sweet,stevia,fresh,strawberry syrup,2.1
+chamomile,sweet,stevia,fresh,caramel syrup,2.1
+chamomile,sweet,stevia,fresh,hazelnut syrup,2.1
+chamomile,sweet,stevia,fresh,vanilla syrup,2.1
+chamomile,sweet,stevia,fresh,cinnamon powder,1.8
+chamomile,sweet,stevia,fresh,chocolate powder,1.8
+chamomile,sweet,stevia,evapore,,1.8
+chamomile,sweet,stevia,evapore,chocolate syrup,2.1
+chamomile,sweet,stevia,evapore,strawberry syrup,2.1
+chamomile,sweet,stevia,evapore,caramel syrup,2.1
+chamomile,sweet,stevia,evapore,hazelnut syrup,2.1
+chamomile,sweet,stevia,evapore,vanilla syrup,2.1
+chamomile,sweet,stevia,evapore,cinnamon powder,1.8
+chamomile,sweet,stevia,evapore,chocolate powder,1.8
+chamomile,sweet,stevia,almond,,2.2
+chamomile,sweet,stevia,almond,chocolate syrup,2.5
+chamomile,sweet,stevia,almond,strawberry syrup,2.5
+chamomile,sweet,stevia,almond,caramel syrup,2.5
+chamomile,sweet,stevia,almond,hazelnut syrup,2.5
+chamomile,sweet,stevia,almond,vanilla syrup,2.5
+chamomile,sweet,stevia,almond,cinnamon powder,2.2
+chamomile,sweet,stevia,almond,chocolate powder,2.2
+chamomile,sweet,stevia,coconut,,2.2
+chamomile,sweet,stevia,coconut,chocolate syrup,2.5
+chamomile,sweet,stevia,coconut,strawberry syrup,2.5
+chamomile,sweet,stevia,coconut,caramel syrup,2.5
+chamomile,sweet,stevia,coconut,hazelnut syrup,2.5
+chamomile,sweet,stevia,coconut,vanilla syrup,2.5
+chamomile,sweet,stevia,coconut,cinnamon powder,2.2
+chamomile,sweet,stevia,coconut,chocolate powder,2.2
+chamomile,sweet,stevia,oat,,2.2
+chamomile,sweet,stevia,oat,chocolate syrup,2.5
+chamomile,sweet,stevia,oat,strawberry syrup,2.5
+chamomile,sweet,stevia,oat,caramel syrup,2.5
+chamomile,sweet,stevia,oat,hazelnut syrup,2.5
+chamomile,sweet,stevia,oat,vanilla syrup,2.5
+chamomile,sweet,stevia,oat,cinnamon powder,2.2
+chamomile,sweet,stevia,oat,chocolate powder,2.2
+chamomile,sweet,honey,,,2.1
+chamomile,sweet,honey,,chocolate syrup,2.4
+chamomile,sweet,honey,,strawberry syrup,2.4
+chamomile,sweet,honey,,caramel syrup,2.4
+chamomile,sweet,honey,,hazelnut syrup,2.4
+chamomile,sweet,honey,,vanilla syrup,2.4
+chamomile,sweet,honey,,cinnamon powder,2.1
+chamomile,sweet,honey,,chocolate powder,2.1
+chamomile,sweet,honey,fresh,,2.1
+chamomile,sweet,honey,fresh,chocolate syrup,2.4
+chamomile,sweet,honey,fresh,strawberry syrup,2.4
+chamomile,sweet,honey,fresh,caramel syrup,2.4
+chamomile,sweet,honey,fresh,hazelnut syrup,2.4
+chamomile,sweet,honey,fresh,vanilla syrup,2.4
+chamomile,sweet,honey,fresh,cinnamon powder,2.1
+chamomile,sweet,honey,fresh,chocolate powder,2.1
+chamomile,sweet,honey,evapore,,2.1
+chamomile,sweet,honey,evapore,chocolate syrup,2.4
+chamomile,sweet,honey,evapore,strawberry syrup,2.4
+chamomile,sweet,honey,evapore,caramel syrup,2.4
+chamomile,sweet,honey,evapore,hazelnut syrup,2.4
+chamomile,sweet,honey,evapore,vanilla syrup,2.4
+chamomile,sweet,honey,evapore,cinnamon powder,2.1
+chamomile,sweet,honey,evapore,chocolate powder,2.1
+chamomile,sweet,honey,almond,,2.5
+chamomile,sweet,honey,almond,chocolate syrup,2.8
+chamomile,sweet,honey,almond,strawberry syrup,2.8
+chamomile,sweet,honey,almond,caramel syrup,2.8
+chamomile,sweet,honey,almond,hazelnut syrup,2.8
+chamomile,sweet,honey,almond,vanilla syrup,2.8
+chamomile,sweet,honey,almond,cinnamon powder,2.5
+chamomile,sweet,honey,almond,chocolate powder,2.5
+chamomile,sweet,honey,coconut,,2.5
+chamomile,sweet,honey,coconut,chocolate syrup,2.8
+chamomile,sweet,honey,coconut,strawberry syrup,2.8
+chamomile,sweet,honey,coconut,caramel syrup,2.8
+chamomile,sweet,honey,coconut,hazelnut syrup,2.8
+chamomile,sweet,honey,coconut,vanilla syrup,2.8
+chamomile,sweet,honey,coconut,cinnamon powder,2.5
+chamomile,sweet,honey,coconut,chocolate powder,2.5
+chamomile,sweet,honey,oat,,2.5
+chamomile,sweet,honey,oat,chocolate syrup,2.8
+chamomile,sweet,honey,oat,strawberry syrup,2.8
+chamomile,sweet,honey,oat,caramel syrup,2.8
+chamomile,sweet,honey,oat,hazelnut syrup,2.8
+chamomile,sweet,honey,oat,vanilla syrup,2.8
+chamomile,sweet,honey,oat,cinnamon powder,2.5
+chamomile,sweet,honey,oat,chocolate powder,2.5
+chamomile,very sweet,,,,1.8
+chamomile,very sweet,,,chocolate syrup,2.1
+chamomile,very sweet,,,strawberry syrup,2.1
+chamomile,very sweet,,,caramel syrup,2.1
+chamomile,very sweet,,,hazelnut syrup,2.1
+chamomile,very sweet,,,vanilla syrup,2.1
+chamomile,very sweet,,,cinnamon powder,1.8
+chamomile,very sweet,,,chocolate powder,1.8
+chamomile,very sweet,,fresh,,1.8
+chamomile,very sweet,,fresh,chocolate syrup,2.1
+chamomile,very sweet,,fresh,strawberry syrup,2.1
+chamomile,very sweet,,fresh,caramel syrup,2.1
+chamomile,very sweet,,fresh,hazelnut syrup,2.1
+chamomile,very sweet,,fresh,vanilla syrup,2.1
+chamomile,very sweet,,fresh,cinnamon powder,1.8
+chamomile,very sweet,,fresh,chocolate powder,1.8
+chamomile,very sweet,,evapore,,1.8
+chamomile,very sweet,,evapore,chocolate syrup,2.1
+chamomile,very sweet,,evapore,strawberry syrup,2.1
+chamomile,very sweet,,evapore,caramel syrup,2.1
+chamomile,very sweet,,evapore,hazelnut syrup,2.1
+chamomile,very sweet,,evapore,vanilla syrup,2.1
+chamomile,very sweet,,evapore,cinnamon powder,1.8
+chamomile,very sweet,,evapore,chocolate powder,1.8
+chamomile,very sweet,,almond,,2.2
+chamomile,very sweet,,almond,chocolate syrup,2.5
+chamomile,very sweet,,almond,strawberry syrup,2.5
+chamomile,very sweet,,almond,caramel syrup,2.5
+chamomile,very sweet,,almond,hazelnut syrup,2.5
+chamomile,very sweet,,almond,vanilla syrup,2.5
+chamomile,very sweet,,almond,cinnamon powder,2.2
+chamomile,very sweet,,almond,chocolate powder,2.2
+chamomile,very sweet,,coconut,,2.2
+chamomile,very sweet,,coconut,chocolate syrup,2.5
+chamomile,very sweet,,coconut,strawberry syrup,2.5
+chamomile,very sweet,,coconut,caramel syrup,2.5
+chamomile,very sweet,,coconut,hazelnut syrup,2.5
+chamomile,very sweet,,coconut,vanilla syrup,2.5
+chamomile,very sweet,,coconut,cinnamon powder,2.2
+chamomile,very sweet,,coconut,chocolate powder,2.2
+chamomile,very sweet,,oat,,2.2
+chamomile,very sweet,,oat,chocolate syrup,2.5
+chamomile,very sweet,,oat,strawberry syrup,2.5
+chamomile,very sweet,,oat,caramel syrup,2.5
+chamomile,very sweet,,oat,hazelnut syrup,2.5
+chamomile,very sweet,,oat,vanilla syrup,2.5
+chamomile,very sweet,,oat,cinnamon powder,2.2
+chamomile,very sweet,,oat,chocolate powder,2.2
+chamomile,very sweet,white,,,1.8
+chamomile,very sweet,white,,chocolate syrup,2.1
+chamomile,very sweet,white,,strawberry syrup,2.1
+chamomile,very sweet,white,,caramel syrup,2.1
+chamomile,very sweet,white,,hazelnut syrup,2.1
+chamomile,very sweet,white,,vanilla syrup,2.1
+chamomile,very sweet,white,,cinnamon powder,1.8
+chamomile,very sweet,white,,chocolate powder,1.8
+chamomile,very sweet,white,fresh,,1.8
+chamomile,very sweet,white,fresh,chocolate syrup,2.1
+chamomile,very sweet,white,fresh,strawberry syrup,2.1
+chamomile,very sweet,white,fresh,caramel syrup,2.1
+chamomile,very sweet,white,fresh,hazelnut syrup,2.1
+chamomile,very sweet,white,fresh,vanilla syrup,2.1
+chamomile,very sweet,white,fresh,cinnamon powder,1.8
+chamomile,very sweet,white,fresh,chocolate powder,1.8
+chamomile,very sweet,white,evapore,,1.8
+chamomile,very sweet,white,evapore,chocolate syrup,2.1
+chamomile,very sweet,white,evapore,strawberry syrup,2.1
+chamomile,very sweet,white,evapore,caramel syrup,2.1
+chamomile,very sweet,white,evapore,hazelnut syrup,2.1
+chamomile,very sweet,white,evapore,vanilla syrup,2.1
+chamomile,very sweet,white,evapore,cinnamon powder,1.8
+chamomile,very sweet,white,evapore,chocolate powder,1.8
+chamomile,very sweet,white,almond,,2.2
+chamomile,very sweet,white,almond,chocolate syrup,2.5
+chamomile,very sweet,white,almond,strawberry syrup,2.5
+chamomile,very sweet,white,almond,caramel syrup,2.5
+chamomile,very sweet,white,almond,hazelnut syrup,2.5
+chamomile,very sweet,white,almond,vanilla syrup,2.5
+chamomile,very sweet,white,almond,cinnamon powder,2.2
+chamomile,very sweet,white,almond,chocolate powder,2.2
+chamomile,very sweet,white,coconut,,2.2
+chamomile,very sweet,white,coconut,chocolate syrup,2.5
+chamomile,very sweet,white,coconut,strawberry syrup,2.5
+chamomile,very sweet,white,coconut,caramel syrup,2.5
+chamomile,very sweet,white,coconut,hazelnut syrup,2.5
+chamomile,very sweet,white,coconut,vanilla syrup,2.5
+chamomile,very sweet,white,coconut,cinnamon powder,2.2
+chamomile,very sweet,white,coconut,chocolate powder,2.2
+chamomile,very sweet,white,oat,,2.2
+chamomile,very sweet,white,oat,chocolate syrup,2.5
+chamomile,very sweet,white,oat,strawberry syrup,2.5
+chamomile,very sweet,white,oat,caramel syrup,2.5
+chamomile,very sweet,white,oat,hazelnut syrup,2.5
+chamomile,very sweet,white,oat,vanilla syrup,2.5
+chamomile,very sweet,white,oat,cinnamon powder,2.2
+chamomile,very sweet,white,oat,chocolate powder,2.2
+chamomile,very sweet,brown,,,1.8
+chamomile,very sweet,brown,,chocolate syrup,2.1
+chamomile,very sweet,brown,,strawberry syrup,2.1
+chamomile,very sweet,brown,,caramel syrup,2.1
+chamomile,very sweet,brown,,hazelnut syrup,2.1
+chamomile,very sweet,brown,,vanilla syrup,2.1
+chamomile,very sweet,brown,,cinnamon powder,1.8
+chamomile,very sweet,brown,,chocolate powder,1.8
+chamomile,very sweet,brown,fresh,,1.8
+chamomile,very sweet,brown,fresh,chocolate syrup,2.1
+chamomile,very sweet,brown,fresh,strawberry syrup,2.1
+chamomile,very sweet,brown,fresh,caramel syrup,2.1
+chamomile,very sweet,brown,fresh,hazelnut syrup,2.1
+chamomile,very sweet,brown,fresh,vanilla syrup,2.1
+chamomile,very sweet,brown,fresh,cinnamon powder,1.8
+chamomile,very sweet,brown,fresh,chocolate powder,1.8
+chamomile,very sweet,brown,evapore,,1.8
+chamomile,very sweet,brown,evapore,chocolate syrup,2.1
+chamomile,very sweet,brown,evapore,strawberry syrup,2.1
+chamomile,very sweet,brown,evapore,caramel syrup,2.1
+chamomile,very sweet,brown,evapore,hazelnut syrup,2.1
+chamomile,very sweet,brown,evapore,vanilla syrup,2.1
+chamomile,very sweet,brown,evapore,cinnamon powder,1.8
+chamomile,very sweet,brown,evapore,chocolate powder,1.8
+chamomile,very sweet,brown,almond,,2.2
+chamomile,very sweet,brown,almond,chocolate syrup,2.5
+chamomile,very sweet,brown,almond,strawberry syrup,2.5
+chamomile,very sweet,brown,almond,caramel syrup,2.5
+chamomile,very sweet,brown,almond,hazelnut syrup,2.5
+chamomile,very sweet,brown,almond,vanilla syrup,2.5
+chamomile,very sweet,brown,almond,cinnamon powder,2.2
+chamomile,very sweet,brown,almond,chocolate powder,2.2
+chamomile,very sweet,brown,coconut,,2.2
+chamomile,very sweet,brown,coconut,chocolate syrup,2.5
+chamomile,very sweet,brown,coconut,strawberry syrup,2.5
+chamomile,very sweet,brown,coconut,caramel syrup,2.5
+chamomile,very sweet,brown,coconut,hazelnut syrup,2.5
+chamomile,very sweet,brown,coconut,vanilla syrup,2.5
+chamomile,very sweet,brown,coconut,cinnamon powder,2.2
+chamomile,very sweet,brown,coconut,chocolate powder,2.2
+chamomile,very sweet,brown,oat,,2.2
+chamomile,very sweet,brown,oat,chocolate syrup,2.5
+chamomile,very sweet,brown,oat,strawberry syrup,2.5
+chamomile,very sweet,brown,oat,caramel syrup,2.5
+chamomile,very sweet,brown,oat,hazelnut syrup,2.5
+chamomile,very sweet,brown,oat,vanilla syrup,2.5
+chamomile,very sweet,brown,oat,cinnamon powder,2.2
+chamomile,very sweet,brown,oat,chocolate powder,2.2
+chamomile,very sweet,saccharin,,,1.8
+chamomile,very sweet,saccharin,,chocolate syrup,2.1
+chamomile,very sweet,saccharin,,strawberry syrup,2.1
+chamomile,very sweet,saccharin,,caramel syrup,2.1
+chamomile,very sweet,saccharin,,hazelnut syrup,2.1
+chamomile,very sweet,saccharin,,vanilla syrup,2.1
+chamomile,very sweet,saccharin,,cinnamon powder,1.8
+chamomile,very sweet,saccharin,,chocolate powder,1.8
+chamomile,very sweet,saccharin,fresh,,1.8
+chamomile,very sweet,saccharin,fresh,chocolate syrup,2.1
+chamomile,very sweet,saccharin,fresh,strawberry syrup,2.1
+chamomile,very sweet,saccharin,fresh,caramel syrup,2.1
+chamomile,very sweet,saccharin,fresh,hazelnut syrup,2.1
+chamomile,very sweet,saccharin,fresh,vanilla syrup,2.1
+chamomile,very sweet,saccharin,fresh,cinnamon powder,1.8
+chamomile,very sweet,saccharin,fresh,chocolate powder,1.8
+chamomile,very sweet,saccharin,evapore,,1.8
+chamomile,very sweet,saccharin,evapore,chocolate syrup,2.1
+chamomile,very sweet,saccharin,evapore,strawberry syrup,2.1
+chamomile,very sweet,saccharin,evapore,caramel syrup,2.1
+chamomile,very sweet,saccharin,evapore,hazelnut syrup,2.1
+chamomile,very sweet,saccharin,evapore,vanilla syrup,2.1
+chamomile,very sweet,saccharin,evapore,cinnamon powder,1.8
+chamomile,very sweet,saccharin,evapore,chocolate powder,1.8
+chamomile,very sweet,saccharin,almond,,2.2
+chamomile,very sweet,saccharin,almond,chocolate syrup,2.5
+chamomile,very sweet,saccharin,almond,strawberry syrup,2.5
+chamomile,very sweet,saccharin,almond,caramel syrup,2.5
+chamomile,very sweet,saccharin,almond,hazelnut syrup,2.5
+chamomile,very sweet,saccharin,almond,vanilla syrup,2.5
+chamomile,very sweet,saccharin,almond,cinnamon powder,2.2
+chamomile,very sweet,saccharin,almond,chocolate powder,2.2
+chamomile,very sweet,saccharin,coconut,,2.2
+chamomile,very sweet,saccharin,coconut,chocolate syrup,2.5
+chamomile,very sweet,saccharin,coconut,strawberry syrup,2.5
+chamomile,very sweet,saccharin,coconut,caramel syrup,2.5
+chamomile,very sweet,saccharin,coconut,hazelnut syrup,2.5
+chamomile,very sweet,saccharin,coconut,vanilla syrup,2.5
+chamomile,very sweet,saccharin,coconut,cinnamon powder,2.2
+chamomile,very sweet,saccharin,coconut,chocolate powder,2.2
+chamomile,very sweet,saccharin,oat,,2.2
+chamomile,very sweet,saccharin,oat,chocolate syrup,2.5
+chamomile,very sweet,saccharin,oat,strawberry syrup,2.5
+chamomile,very sweet,saccharin,oat,caramel syrup,2.5
+chamomile,very sweet,saccharin,oat,hazelnut syrup,2.5
+chamomile,very sweet,saccharin,oat,vanilla syrup,2.5
+chamomile,very sweet,saccharin,oat,cinnamon powder,2.2
+chamomile,very sweet,saccharin,oat,chocolate powder,2.2
+chamomile,very sweet,stevia,,,1.8
+chamomile,very sweet,stevia,,chocolate syrup,2.1
+chamomile,very sweet,stevia,,strawberry syrup,2.1
+chamomile,very sweet,stevia,,caramel syrup,2.1
+chamomile,very sweet,stevia,,hazelnut syrup,2.1
+chamomile,very sweet,stevia,,vanilla syrup,2.1
+chamomile,very sweet,stevia,,cinnamon powder,1.8
+chamomile,very sweet,stevia,,chocolate powder,1.8
+chamomile,very sweet,stevia,fresh,,1.8
+chamomile,very sweet,stevia,fresh,chocolate syrup,2.1
+chamomile,very sweet,stevia,fresh,strawberry syrup,2.1
+chamomile,very sweet,stevia,fresh,caramel syrup,2.1
+chamomile,very sweet,stevia,fresh,hazelnut syrup,2.1
+chamomile,very sweet,stevia,fresh,vanilla syrup,2.1
+chamomile,very sweet,stevia,fresh,cinnamon powder,1.8
+chamomile,very sweet,stevia,fresh,chocolate powder,1.8
+chamomile,very sweet,stevia,evapore,,1.8
+chamomile,very sweet,stevia,evapore,chocolate syrup,2.1
+chamomile,very sweet,stevia,evapore,strawberry syrup,2.1
+chamomile,very sweet,stevia,evapore,caramel syrup,2.1
+chamomile,very sweet,stevia,evapore,hazelnut syrup,2.1
+chamomile,very sweet,stevia,evapore,vanilla syrup,2.1
+chamomile,very sweet,stevia,evapore,cinnamon powder,1.8
+chamomile,very sweet,stevia,evapore,chocolate powder,1.8
+chamomile,very sweet,stevia,almond,,2.2
+chamomile,very sweet,stevia,almond,chocolate syrup,2.5
+chamomile,very sweet,stevia,almond,strawberry syrup,2.5
+chamomile,very sweet,stevia,almond,caramel syrup,2.5
+chamomile,very sweet,stevia,almond,hazelnut syrup,2.5
+chamomile,very sweet,stevia,almond,vanilla syrup,2.5
+chamomile,very sweet,stevia,almond,cinnamon powder,2.2
+chamomile,very sweet,stevia,almond,chocolate powder,2.2
+chamomile,very sweet,stevia,coconut,,2.2
+chamomile,very sweet,stevia,coconut,chocolate syrup,2.5
+chamomile,very sweet,stevia,coconut,strawberry syrup,2.5
+chamomile,very sweet,stevia,coconut,caramel syrup,2.5
+chamomile,very sweet,stevia,coconut,hazelnut syrup,2.5
+chamomile,very sweet,stevia,coconut,vanilla syrup,2.5
+chamomile,very sweet,stevia,coconut,cinnamon powder,2.2
+chamomile,very sweet,stevia,coconut,chocolate powder,2.2
+chamomile,very sweet,stevia,oat,,2.2
+chamomile,very sweet,stevia,oat,chocolate syrup,2.5
+chamomile,very sweet,stevia,oat,strawberry syrup,2.5
+chamomile,very sweet,stevia,oat,caramel syrup,2.5
+chamomile,very sweet,stevia,oat,hazelnut syrup,2.5
+chamomile,very sweet,stevia,oat,vanilla syrup,2.5
+chamomile,very sweet,stevia,oat,cinnamon powder,2.2
+chamomile,very sweet,stevia,oat,chocolate powder,2.2
+chamomile,very sweet,honey,,,2.1
+chamomile,very sweet,honey,,chocolate syrup,2.4
+chamomile,very sweet,honey,,strawberry syrup,2.4
+chamomile,very sweet,honey,,caramel syrup,2.4
+chamomile,very sweet,honey,,hazelnut syrup,2.4
+chamomile,very sweet,honey,,vanilla syrup,2.4
+chamomile,very sweet,honey,,cinnamon powder,2.1
+chamomile,very sweet,honey,,chocolate powder,2.1
+chamomile,very sweet,honey,fresh,,2.1
+chamomile,very sweet,honey,fresh,chocolate syrup,2.4
+chamomile,very sweet,honey,fresh,strawberry syrup,2.4
+chamomile,very sweet,honey,fresh,caramel syrup,2.4
+chamomile,very sweet,honey,fresh,hazelnut syrup,2.4
+chamomile,very sweet,honey,fresh,vanilla syrup,2.4
+chamomile,very sweet,honey,fresh,cinnamon powder,2.1
+chamomile,very sweet,honey,fresh,chocolate powder,2.1
+chamomile,very sweet,honey,evapore,,2.1
+chamomile,very sweet,honey,evapore,chocolate syrup,2.4
+chamomile,very sweet,honey,evapore,strawberry syrup,2.4
+chamomile,very sweet,honey,evapore,caramel syrup,2.4
+chamomile,very sweet,honey,evapore,hazelnut syrup,2.4
+chamomile,very sweet,honey,evapore,vanilla syrup,2.4
+chamomile,very sweet,honey,evapore,cinnamon powder,2.1
+chamomile,very sweet,honey,evapore,chocolate powder,2.1
+chamomile,very sweet,honey,almond,,2.5
+chamomile,very sweet,honey,almond,chocolate syrup,2.8
+chamomile,very sweet,honey,almond,strawberry syrup,2.8
+chamomile,very sweet,honey,almond,caramel syrup,2.8
+chamomile,very sweet,honey,almond,hazelnut syrup,2.8
+chamomile,very sweet,honey,almond,vanilla syrup,2.8
+chamomile,very sweet,honey,almond,cinnamon powder,2.5
+chamomile,very sweet,honey,almond,chocolate powder,2.5
+chamomile,very sweet,honey,coconut,,2.5
+chamomile,very sweet,honey,coconut,chocolate syrup,2.8
+chamomile,very sweet,honey,coconut,strawberry syrup,2.8
+chamomile,very sweet,honey,coconut,caramel syrup,2.8
+chamomile,very sweet,honey,coconut,hazelnut syrup,2.8
+chamomile,very sweet,honey,coconut,vanilla syrup,2.8
+chamomile,very sweet,honey,coconut,cinnamon powder,2.5
+chamomile,very sweet,honey,coconut,chocolate powder,2.5
+chamomile,very sweet,honey,oat,,2.5
+chamomile,very sweet,honey,oat,chocolate syrup,2.8
+chamomile,very sweet,honey,oat,strawberry syrup,2.8
+chamomile,very sweet,honey,oat,caramel syrup,2.8
+chamomile,very sweet,honey,oat,hazelnut syrup,2.8
+chamomile,very sweet,honey,oat,vanilla syrup,2.8
+chamomile,very sweet,honey,oat,cinnamon powder,2.5
+chamomile,very sweet,honey,oat,chocolate powder,2.5

@@ -1,0 +1,97 @@
+chocolate_type,temperature,extra,cost
+chocolate,hot,,2.6
+chocolate,hot,chocolate syrup,2.9
+chocolate,hot,caramel syrup,2.9
+chocolate,hot,strawberry syrup,2.9
+chocolate,hot,hazelnut syrup,2.9
+chocolate,hot,vanilla syrup,2.9
+chocolate,cold,,2.6
+chocolate,cold,chocolate syrup,2.9
+chocolate,cold,caramel syrup,2.9
+chocolate,cold,strawberry syrup,2.9
+chocolate,cold,hazelnut syrup,2.9
+chocolate,cold,vanilla syrup,2.9
+chocolate viennois,hot,,2.9
+chocolate viennois,hot,chocolate syrup,3.1999999999999997
+chocolate viennois,hot,caramel syrup,3.1999999999999997
+chocolate viennois,hot,strawberry syrup,3.1999999999999997
+chocolate viennois,hot,hazelnut syrup,3.1999999999999997
+chocolate viennois,hot,vanilla syrup,3.1999999999999997
+chocolate viennois,cold,,2.9
+chocolate viennois,cold,chocolate syrup,3.1999999999999997
+chocolate viennois,cold,caramel syrup,3.1999999999999997
+chocolate viennois,cold,strawberry syrup,3.1999999999999997
+chocolate viennois,cold,hazelnut syrup,3.1999999999999997
+chocolate viennois,cold,vanilla syrup,3.1999999999999997
+chocolate white,hot,,2.7
+chocolate white,hot,chocolate syrup,3.0
+chocolate white,hot,caramel syrup,3.0
+chocolate white,hot,strawberry syrup,3.0
+chocolate white,hot,hazelnut syrup,3.0
+chocolate white,hot,vanilla syrup,3.0
+chocolate white,cold,,2.7
+chocolate white,cold,chocolate syrup,3.0
+chocolate white,cold,caramel syrup,3.0
+chocolate white,cold,strawberry syrup,3.0
+chocolate white,cold,hazelnut syrup,3.0
+chocolate white,cold,vanilla syrup,3.0
+chocolate bitter,hot,,2.7
+chocolate bitter,hot,chocolate syrup,3.0
+chocolate bitter,hot,caramel syrup,3.0
+chocolate bitter,hot,strawberry syrup,3.0
+chocolate bitter,hot,hazelnut syrup,3.0
+chocolate bitter,hot,vanilla syrup,3.0
+chocolate bitter,cold,,2.7
+chocolate bitter,cold,chocolate syrup,3.0
+chocolate bitter,cold,caramel syrup,3.0
+chocolate bitter,cold,strawberry syrup,3.0
+chocolate bitter,cold,hazelnut syrup,3.0
+chocolate bitter,cold,vanilla syrup,3.0
+chocolate orange,hot,,2.7
+chocolate orange,hot,chocolate syrup,3.0
+chocolate orange,hot,caramel syrup,3.0
+chocolate orange,hot,strawberry syrup,3.0
+chocolate orange,hot,hazelnut syrup,3.0
+chocolate orange,hot,vanilla syrup,3.0
+chocolate orange,cold,,2.7
+chocolate orange,cold,chocolate syrup,3.0
+chocolate orange,cold,caramel syrup,3.0
+chocolate orange,cold,strawberry syrup,3.0
+chocolate orange,cold,hazelnut syrup,3.0
+chocolate orange,cold,vanilla syrup,3.0
+chocolate hazelnut,hot,,2.7
+chocolate hazelnut,hot,chocolate syrup,3.0
+chocolate hazelnut,hot,caramel syrup,3.0
+chocolate hazelnut,hot,strawberry syrup,3.0
+chocolate hazelnut,hot,hazelnut syrup,3.0
+chocolate hazelnut,hot,vanilla syrup,3.0
+chocolate hazelnut,cold,,2.7
+chocolate hazelnut,cold,chocolate syrup,3.0
+chocolate hazelnut,cold,caramel syrup,3.0
+chocolate hazelnut,cold,strawberry syrup,3.0
+chocolate hazelnut,cold,hazelnut syrup,3.0
+chocolate hazelnut,cold,vanilla syrup,3.0
+chocolate ruby,hot,,2.7
+chocolate ruby,hot,chocolate syrup,3.0
+chocolate ruby,hot,caramel syrup,3.0
+chocolate ruby,hot,strawberry syrup,3.0
+chocolate ruby,hot,hazelnut syrup,3.0
+chocolate ruby,hot,vanilla syrup,3.0
+chocolate ruby,cold,,2.7
+chocolate ruby,cold,chocolate syrup,3.0
+chocolate ruby,cold,caramel syrup,3.0
+chocolate ruby,cold,strawberry syrup,3.0
+chocolate ruby,cold,hazelnut syrup,3.0
+chocolate ruby,cold,vanilla syrup,3.0
+chocolate salty caramel,hot,,2.7
+chocolate salty caramel,hot,chocolate syrup,3.0
+chocolate salty caramel,hot,caramel syrup,3.0
+chocolate salty caramel,hot,strawberry syrup,3.0
+chocolate salty caramel,hot,hazelnut syrup,3.0
+chocolate salty caramel,hot,vanilla syrup,3.0
+chocolate salty caramel,cold,,2.7
+chocolate salty caramel,cold,chocolate syrup,3.0
+chocolate salty caramel,cold,caramel syrup,3.0
+chocolate salty caramel,cold,strawberry syrup,3.0
+chocolate salty caramel,cold,hazelnut syrup,3.0
+chocolate salty caramel,cold,vanilla syrup,3.0
