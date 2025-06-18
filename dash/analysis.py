@@ -5,8 +5,6 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import LabelEncoder
 
 from analysis_helpers import find_product
 
@@ -58,25 +56,3 @@ totals.update({"money": total_cost})
 
 # Revenue
 totals.update({"revenue": float(data["workdays"]["payment"].sum()) + totals["tips"]})
-
-# Select a date to analyze
-orders_df = data["orders"]
-X = orders_df["tips_method"]
-y = np.array(orders_df["tips"]).reshape(-1, 1)
-
-sns.scatterplot(data=orders_df, x="order_time", y="tips")
-plt.show()
-
-# Make categorical into numeric
-le = LabelEncoder()
-X = le.fit_transform(X).reshape(-1, 1)
-
-# Create a model
-model = LinearRegression()
-
-# Train the model
-model.fit(X, y)
-
-# Predict
-z = model.predict(np.array([[1]]))
-print(z)
