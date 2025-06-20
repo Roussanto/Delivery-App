@@ -1,14 +1,16 @@
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import Column, Integer, String, Float, Numeric, Date, Time, Enum, ForeignKey
 
-Base = declarative_base()
+
+class Base(DeclarativeBase):
+    pass
 
 
 class Coffee(Base):
     __tablename__ = "coffees"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(Enum("espresso", "espresso machiatto", "espresso americano", "cappuccino latte", "nes", "frappe"), nullable=False),
+    type = Column(Enum("espresso", "espresso machiatto", "espresso americano", "cappuccino latte", "nes", "frappe"), nullable=False)
     size = Column(Enum("single", "double", "quadruple"), nullable=False)
     variety = Column(Enum("80% arabica + 20% robust", "100% arabica", "decaffeine"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
@@ -22,7 +24,7 @@ class FreddoFlat(Base):
     __tablename__ = "freddos_flats"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(Enum("freddo espresso", "espresso cappuccino", "espresso cappuccino latte", "flat white cold", "flat white hot"), nullable=False),
+    type = Column(Enum("freddo espresso", "espresso cappuccino", "espresso cappuccino latte", "flat white cold", "flat white hot"), nullable=False)
     size = Column(Enum("regular", "XL"), nullable=False)
     variety = Column(Enum("80% arabica + 20% robust", "100% arabica", "decaffeine"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
@@ -36,7 +38,7 @@ class Filter(Base):
     __tablename__ = "filters"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(Enum("filter", "irish coffee", "ellinikos"), nullable=False),
+    type = Column(Enum("filter", "irish coffee", "ellinikos"), nullable=False)
     size = Column(Enum("single", "double"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
     sugar_type = Column(Enum("white", "brown", "saccharin", "stevia", "honey"))
@@ -77,7 +79,7 @@ class Tee(Base):
     __tablename__ = "tees"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(Enum("tee"), nullable=False),
+    type = Column(Enum("tee"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
     sugar_type = Column(Enum("white", "brown", "saccharin", "stevia", "honey"))
     milk = Column(Enum("fresh", "evapore", "almond", "coconut", "oat"))
@@ -89,7 +91,7 @@ class Chamomile(Base):
     __tablename__ = "chamomiles"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(Enum("chamomile"), nullable=False),
+    type = Column(Enum("chamomile"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
     sugar_type = Column(Enum("white", "brown", "saccharin", "stevia", "honey"))
     milk = Column(Enum("fresh", "evapore", "almond", "coconut", "oat"))
@@ -151,7 +153,7 @@ class Workday(Base):
 
 
 class Order(Base):
-    __tablename_ = "orders"
+    __tablename__ = "orders"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     order_time = Column(Time, nullable=False)
@@ -166,7 +168,7 @@ class Order(Base):
 
 
 class Item(Base):
-    __tablename_ = "items"
+    __tablename__ = "items"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     product_id = Column(Integer, nullable=False)
@@ -178,9 +180,9 @@ class Item(Base):
 
 # Read view
 class VOrdersSummary(Base):
-    __tablename_ = "items"
+    __tablename__ = "v_orders_summary"
 
-    order_id = Column(Integer)
+    order_id = Column(Integer, primary_key=True)
     order_time = Column(Date)
     tips = Column(Numeric(precision=4, scale=2))
     tips_method = Column(String(40))
