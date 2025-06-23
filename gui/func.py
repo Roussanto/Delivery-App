@@ -89,7 +89,7 @@ def customer_exists(database, address_name, customer_name):
         return False
 
 
-def prepare_for_next_item(tab4):
+def prepare_item_tab_for_next_item(tab4):
     # If multiple item categories are selected their frames stack up.
     # With the pack_forget() method we omit the previous frame if a new one is selected.
     tab4.recipe_frame.pack_forget()
@@ -189,7 +189,7 @@ def create_relations(cursor, item, customer_dict, address_dict, workday_dict, or
 
 
 # For a selected workday create a dict containing addresses and their corresponding customers
-def perform_cust_check():
+def check_customer_misspellings():
     # Connect to the database
     database = connect_database()
 

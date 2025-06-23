@@ -5,7 +5,7 @@ from colorama import Fore
 
 from uploads import upload_data
 from settings import WIDGET_PAD
-from func import make_basket_str, prepare_for_next_item, perform_cust_check
+from func import make_basket_str, prepare_item_tab_for_next_item, check_customer_misspellings
 from data.costs import *
 
 # Upload addresses
@@ -48,6 +48,9 @@ class App(tk.Tk):
         self.basket = []
         # Initialise order cost
         self.order_cost = 0
+
+        # Create all data dict or json
+
 
         # Order details: necessary details for Review tab(5) display
         self.order_details = {"basket_format": "",
@@ -98,14 +101,19 @@ class App(tk.Tk):
                 self.notebook.add(self.tab5, text="Review")
 
             # Remove the item frame and clear the offer contents so the next item can be inserted
-            prepare_for_next_item(self.tab4)
+            prepare_item_tab_for_next_item(self.tab4)
 
         def check_cust_miss():
             workday = self.tab1.workday_frame.workday_dict["date"].get()
-            perform_cust_check()
+            check_customer_misspellings()
 
         # When the Upload button is pressed the data will be stored in the database.
         def press_upload():
+            # Perform checks - use all_data dict
+
+            # Parse inputs - use all_data dict
+
+            # Upload the data
             upload_data(self.tab1, self.tab2, self.tab3, self.basket)
             # Empty the basket
             self.basket.clear()
