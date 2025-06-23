@@ -181,8 +181,10 @@ def create_relations(cursor, item, customer_dict, address_dict, workday_dict, or
     cursor.execute(query)
     product_id = cursor.fetchall()[0][0]
 
-    # Insert into "items"
+    # Detect product type
     product_type = str(item["category"]).lower()
+
+    # Insert into "items"
     query = (f"INSERT INTO items (order_id, offer_id, product_id, product_type) "
              f"VALUES ({order_id}, {offer_id}, {product_id}, '{product_type}');")
     cursor.execute(query)
