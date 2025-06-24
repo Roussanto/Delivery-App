@@ -49,9 +49,6 @@ class App(tk.Tk):
         # Initialise order cost
         self.order_cost = 0
 
-        # Create all data dict or json
-
-
         # Order details: necessary details for Review tab(5) display
         self.order_details = {"basket_format": "",
                               "order_cost": 0,
@@ -60,7 +57,7 @@ class App(tk.Tk):
 
         def press_add_to_basket():
             # Draw the tk.Var contents and save them as a list.
-            item = {key: value.get() for key, value in self.tab4.item_dict.items()}
+            item = {key: value.get() for key, value in self.tab4.recipe_frame.recipe_dict.items()}
             # Create a basket of items
             self.basket.append(item)
             # Calculate total order cost
