@@ -3,7 +3,7 @@ from tkinter import ttk
 import _tkinter
 from colorama import Fore
 
-from uploads import upload_data
+from uploads_2 import upload_data
 from settings import WIDGET_PAD
 from func import make_basket_str, prepare_item_tab_for_next_item, check_customer_misspellings
 from data.costs import *
@@ -106,12 +106,8 @@ class App(tk.Tk):
 
         # When the Upload button is pressed the data will be stored in the database.
         def press_upload():
-            # Perform checks - use all_data dict
-
-            # Parse inputs - use all_data dict
-
             # Upload the data
-            upload_data(self.tab1, self.tab2, self.tab3, self.basket)
+            upload_data(self.basket, self.tab1, self.tab2, self.tab3)
             # Empty the basket
             self.basket.clear()
             # Clear order cost

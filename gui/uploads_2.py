@@ -1,10 +1,11 @@
+import tkinter
 from datetime import datetime
 
 from sqlalchemy import create_engine, select, and_
 from sqlalchemy.orm import Session
 from colorama import Fore
 
-from orm.model import Workday, Address, Customer, Order, Coffee, FreddoFlat, Filter, Chocolate, WeirdChocolate, Beverage, Tee, Chamomile, Smoothie, Food, Offer
+from orm.model import Workday, Address, Customer, Order, Coffee, FreddoFlat, Filter, Chocolate, WeirdChocolate, Beverage, Tee, Chamomile, Smoothie, Food, Offer, Item
 from func import check_none_type
 
 # Create a connection
@@ -14,11 +15,11 @@ engine = create_engine(
 )
 
 
-def upload_workday(dict_var):
+def upload_workday(info: dict[str, tkinter.Variable]):
     # Export the variables' input
-    date = datetime.strptime(dict_var["date"].get(), "%Y-%m-%d").date()
-    hours = dict_var["hours"].get()
-    payment = dict_var["payment"].get()
+    date = datetime.strptime(info["date"].get(), "%Y-%m-%d").date()
+    hours = info["hours"].get()
+    payment = info["payment"].get()
 
     with Session(engine) as session:
         # Dates in the database
@@ -33,11 +34,11 @@ def upload_workday(dict_var):
             print(Fore.GREEN + "Workday upload successful!")
 
 
-def upload_address(dict_var):
+def upload_address(info: dict[str, tkinter.Variable]):
     # Export the variables' input
-    address = dict_var["address"].get()
-    latitude = dict_var["latitude"].get()
-    longitude = dict_var["longitude"].get()
+    address = info["address"].get()
+    latitude = info["latitude"].get()
+    longitude = info["longitude"].get()
 
     # check_none_type returns (val,) because it's only one value in tuple.
     # To extract the val itself we use val[0]
@@ -55,10 +56,10 @@ def upload_address(dict_var):
             print(Fore.GREEN + "Address upload successful!")
 
 
-def upload_customer(dict_var, address_name):
+def upload_customer(info: dict[str, tkinter.Variable], address_name):
     # Export the variables' input
-    customer_name = dict_var["customer name"].get()
-    floor = dict_var["floor"].get()
+    customer_name = info["customer name"].get()
+    floor = info["floor"].get()
 
     # Empty customer, floor entries means that the input is a string of length 0.
     # We need to make it NoneType, so the db can decline the input of an empty input.
@@ -80,14 +81,14 @@ def upload_customer(dict_var, address_name):
             print(Fore.GREEN + "Customer upload successful!")
 
 
-def upload_order(dict_var, workday_date, customer_name, address_name):
+def upload_order(info: dict[str, tkinter.Variable], workday_date, customer_name, address_name):
     # Export the variables' input
-    order_time = datetime.strptime(dict_var["order time"].get(), "%H:%M:%S").time()
-    delivery_time = datetime.strptime(dict_var["delivery time"].get(), "%H:%M:%S").time()
-    tips = dict_var["tips"].get()
-    tips_method = dict_var["tips method"].get()
-    source = dict_var["source"].get()
-    payment_method = dict_var["payment method"].get()
+    order_time = datetime.strptime(info["order time"].get(), "%H:%M:%S").time()
+    delivery_time = datetime.strptime(info["delivery time"].get(), "%H:%M:%S").time()
+    tips = info["tips"].get()
+    tips_method = info["tips method"].get()
+    source = info["source"].get()
+    payment_method = info["payment method"].get()
 
     # Empty entries means that the input is a string of length 0.
     # We need to make it NoneType, so the db can decline the input of an empty input.
@@ -121,57 +122,163 @@ def upload_order(dict_var, workday_date, customer_name, address_name):
         customer_id = session.execute(subquery_3).scalars()
 
         # Add order
-        session.add(Order(workday_id=workday_id,
-                          customer_id=customer_id,
-                          order_time=order_time,
-                          delivery_time=delivery_time,
-                          tips=tips,
-                          tips_method=tips_method,
-                          source=source,
-                          payment_method=payment_method)
-                    )
-        print(Fore.GREEN + "Order upload successful!")
+        with session.begin():
+            session.add(Order(workday_id=workday_id,
+                              customer_id=customer_id,
+                              order_time=order_time,
+                              delivery_time=delivery_time,
+                              tips=tips,
+                              tips_method=tips_method,
+                              source=source,
+                              payment_method=payment_method)
+                        )
+            print(Fore.GREEN + "Order upload successful!")
 
 
 def upload_items(basket):
+    basket_updated = []
     # Export the variables' input
     for item in basket:
+        # Remove non-ingredient variables
+        offer = item.pop("offer")
+        item.pop("category")
+
         # Make empty StringVars to None
         for key in list(item.keys()):
             item[key] = check_none_type(item[key])[0]
 
         with Session(engine) as session:
             if item["category"] == "Coffee":
-                new_item = Coffee(**item)
+                new_item_info = {
+                    "item": Coffee(**item),
+                    "table": Coffee,
+                    "product_type": "coffee",
+                    "offer": offer
+                }
             elif item["category"] == "Freddo or Flat":
-                new_item = FreddoFlat(**item)
+                new_item_info = {
+                    "item": FreddoFlat(**item),
+                    "table": Coffee,
+                    "product_type": "freddo or flat",
+                    "offer": offer
+                }
             elif item["category"] == "Filter":
-                new_item = Filter(**item)
+                new_item_info = {
+                    "item": Filter(**item),
+                    "table": Coffee,
+                    "product_type": "filter",
+                    "offer": offer
+                }
             elif item["category"] == "Chocolate":
-                new_item = Chocolate(**item)
+                new_item_info = {
+                    "item": Chocolate(**item),
+                    "table": Coffee,
+                    "product_type": "chocolate",
+                    "offer": offer
+                }
             elif item["category"] == "Food":
-                new_item = Food(**item)
+                new_item_info = {
+                    "item": Food(**item),
+                    "table": Coffee,
+                    "product_type": "food",
+                    "offer": offer
+                }
             elif item["category"] == "Beverage":
-                new_item = Beverage(**item)
+                new_item_info = {
+                    "item": Beverage(**item),
+                    "table": Coffee,
+                    "product_type": "beverage",
+                    "offer": offer
+                }
             elif item["category"] == "Chamomile":
-                new_item = Chamomile(**item)
+                new_item_info = {
+                    "item": Chamomile(**item),
+                    "table": Coffee,
+                    "product_type": "chamomile",
+                    "offer": offer
+                }
             elif item["category"] == "Weird Chocolate":
-                new_item = WeirdChocolate(**item)
+                new_item_info = {
+                    "item": WeirdChocolate(**item),
+                    "table": Coffee,
+                    "product_type": "weird chocolate",
+                    "offer": offer
+                }
             elif item["category"] == "Tee":
-                new_item = Tee(**item)
+                new_item_info = {
+                    "item": Tee(**item),
+                    "table": Coffee,
+                    "product_type": "tee",
+                    "offer": offer
+                }
             elif item["category"] == "Smoothie":
-                new_item = Smoothie(**item)
-            session.add(new_item)
+                new_item_info = {
+                    "item": Smoothie(**item),
+                    "table": Coffee,
+                    "product_type": "smoothie",
+                    "offer": offer
+                }
+            # Add the new item to the corresponding table
+            with session.begin():
+                session.add(new_item_info["item"])
+
+            # Store the new item info
+            basket_updated.append(new_item_info)
+
+    # Return the new item's info
+    return basket_updated
 
 
-def upload_items_polymorphic(basket, customer_dict, address_dict, workday_dict, order_dict):
-    for item in basket:
+def upload_items_polymorphic(basket_updated):
+    for new_item_info in basket_updated:
         # Parse data
-        workday_date = datetime.strptime(workday_dict["date"].get(), "%Y-%m-%d").date()
-        order_time = datetime.strptime(order_dict["order time"].get(), "%H:%M:%S").time()
-        customer_name = customer_dict["customer name"].get()
-        address = address_dict["address"].get()
+        # workday_date = datetime.strptime(workday_dict["date"].get(), "%Y-%m-%d").date()
+        # order_time = datetime.strptime(order_dict["order time"].get(), "%H:%M:%S").time()
+        # customer_name = customer_dict["customer name"].get()
+        # address = address_dict["address"].get()
 
         # Select the order that was just inserted
-        # add query with limit 1
+        with Session(engine) as session:
+            # Find last recorder order id
+            query = select(Order.id).order_by(Order.id.desc())
+            order_id = session.execute(query).scalars().first()
 
+            # Find offer id
+            query = select(Offer.id).where(Offer.description == new_item_info["offer"])
+            offer_id = session.execute(query).scalars()
+
+            # Find product id
+            query = select(new_item_info["table"].id).order_by(new_item_info["table"].id.desc())
+            product_id = session.execute(query).scalars().first()
+
+            # Extract product type
+            product_type = new_item_info["product_type"]
+
+            # Insert into "items"
+            with session.begin():
+                new_item = Item(product_id=product_id,
+                                product_type=product_type,
+                                order_id=order_id,
+                                offer_id=offer_id)
+                session.add(new_item)
+
+
+def upload_data(basket, tab1, tab2, tab3):
+    # Get dicts
+    workday_info = tab1.workday_frame.workday_dict
+    address_info = tab2.address_frame.address_dict
+    customer_info = tab2.customer_frame.customer_dict
+    order_info = tab3.order_frame.order_dict
+
+    # Upload workday
+    upload_workday(workday_info)
+    # Upload address
+    upload_address(address_info)
+    # Upload customer
+    upload_customer(customer_info, address_info["name"])
+    # Upload order
+    upload_order(order_info, workday_info["date"], customer_info["name"], address_info["name"])
+    # Upload items in category: Coffee, Food etc
+    basket_updated = upload_items(basket)
+    # Upload items in items' junction table
+    upload_items_polymorphic(basket_updated)
