@@ -57,7 +57,7 @@ class App(tk.Tk):
 
         def press_add_to_basket():
             # Draw the tk.Var contents and save them as a list.
-            item = {key: value.get() for key, value in self.tab4.recipe_frame.recipe_dict.items()}
+            item = {key: value.get() for key, value in self.tab4.item_dict.items()}
             # Create a basket of items
             self.basket.append(item)
             # Calculate total order cost
@@ -100,13 +100,8 @@ class App(tk.Tk):
             # Remove the item frame and clear the offer contents so the next item can be inserted
             prepare_item_tab_for_next_item(self.tab4)
 
-        def check_cust_miss():
-            workday = self.tab1.workday_frame.workday_dict["date"].get()
-            check_customer_misspellings()
-
         # When the Upload button is pressed the data will be stored in the database.
         def press_upload():
-            # Upload the data
             upload_data(self.basket, self.tab1, self.tab2, self.tab3)
             # Empty the basket
             self.basket.clear()
@@ -147,7 +142,7 @@ class App(tk.Tk):
                 selected_tab = self.notebook.tab(self.notebook.select(), "text")
                 # Create the "Check customer misspellings" button
                 if selected_tab == "Workday":
-                    self.misspell_button = ttk.Button(self, text="Check customer misspellings", command=check_cust_miss)
+                    self.misspell_button = ttk.Button(self, text="Check customer misspellings", command=check_customer_misspellings)
                     self.misspell_button.pack()
                 else:
                     self.misspell_button.pack_forget()

@@ -140,7 +140,7 @@ class Customer(Base):
     name = Column(String(40), nullable=False)
     floor = Column(Integer, nullable=False)
 
-    address_id = Column(Integer, ForeignKey("customers.id"), nullable=False)
+    address_id = Column(Integer, ForeignKey("addresses.id"), nullable=False)
 
 
 class Workday(Base):

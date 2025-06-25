@@ -29,8 +29,8 @@ def upload_workday(info: dict[str, tkinter.Variable]):
         if date in db_dates:
             print(Fore.BLUE + "Workday already exists!")
         else:
-            with session.begin():
-                session.add(Workday(date=date, hours=hours, payment=payment))
+            session.add(Workday(date=date, hours=hours, payment=payment))
+            session.commit()
             print(Fore.GREEN + "Workday upload successful!")
 
 
@@ -51,8 +51,8 @@ def upload_address(info: dict[str, tkinter.Variable]):
         if address in db_addresses:
             print(Fore.BLUE + "Address already exists!")
         else:
-            with session.begin():
-                session.add(Address(name=address, latitude=latitude, longitude=longitude))
+            session.add(Address(name=address, latitude=latitude, longitude=longitude))
+            session.commit()
             print(Fore.GREEN + "Address upload successful!")
 
 
@@ -70,14 +70,17 @@ def upload_customer(info: dict[str, tkinter.Variable], address_name):
     # Else,they have to be inserted into the database.
     with Session(engine) as session:
         subquery = select(Address.id).where(Address.name == address_name)
-        query = select(Customer.name).where(Customer.address_id.in_(subquery))
+        sub_address_id = session.execute(subquery).scalars().first()
+        print(sub_address_id)
+    with Session(engine) as session:
+        query = select(Customer.name).where(Customer.address_id == 1)
         db_customers = session.execute(query).scalars().all()
 
         if customer_name in db_customers:
             print(Fore.BLUE + "Customer already exists!")
         else:
-            with session.begin():
-                session.add(Customer(name=customer_name, floor=floor))
+            session.add(Customer(name=customer_name, floor=floor, address_id=sub_address_id))
+            session.commit()
             print(Fore.GREEN + "Customer upload successful!")
 
 
@@ -122,17 +125,17 @@ def upload_order(info: dict[str, tkinter.Variable], workday_date, customer_name,
         customer_id = session.execute(subquery_3).scalars()
 
         # Add order
-        with session.begin():
-            session.add(Order(workday_id=workday_id,
-                              customer_id=customer_id,
-                              order_time=order_time,
-                              delivery_time=delivery_time,
-                              tips=tips,
-                              tips_method=tips_method,
-                              source=source,
-                              payment_method=payment_method)
-                        )
-            print(Fore.GREEN + "Order upload successful!")
+        session.add(Order(workday_id=workday_id,
+                          customer_id=customer_id,
+                          order_time=order_time,
+                          delivery_time=delivery_time,
+                          tips=tips,
+                          tips_method=tips_method,
+                          source=source,
+                          payment_method=payment_method)
+                    )
+        session.commit()
+        print(Fore.GREEN + "Order upload successful!")
 
 
 def upload_items(basket):
@@ -219,8 +222,8 @@ def upload_items(basket):
                     "offer": offer
                 }
             # Add the new item to the corresponding table
-            with session.begin():
-                session.add(new_item_info["item"])
+            session.add(new_item_info["item"])
+            session.commit()
 
             # Store the new item info
             basket_updated.append(new_item_info)
@@ -255,12 +258,12 @@ def upload_items_polymorphic(basket_updated):
             product_type = new_item_info["product_type"]
 
             # Insert into "items"
-            with session.begin():
-                new_item = Item(product_id=product_id,
-                                product_type=product_type,
-                                order_id=order_id,
-                                offer_id=offer_id)
-                session.add(new_item)
+            new_item = Item(product_id=product_id,
+                            product_type=product_type,
+                            order_id=order_id,
+                            offer_id=offer_id)
+            session.add(new_item)
+            session.commit()
 
 
 def upload_data(basket, tab1, tab2, tab3):
@@ -275,9 +278,9 @@ def upload_data(basket, tab1, tab2, tab3):
     # Upload address
     upload_address(address_info)
     # Upload customer
-    upload_customer(customer_info, address_info["name"])
+    upload_customer(customer_info, address_info["address"].get())
     # Upload order
-    upload_order(order_info, workday_info["date"], customer_info["name"], address_info["name"])
+    upload_order(order_info, workday_info["date"].get(), customer_info["name"].get(), address_info["address"].get())
     # Upload items in category: Coffee, Food etc
     basket_updated = upload_items(basket)
     # Upload items in items' junction table
