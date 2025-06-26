@@ -6,13 +6,16 @@ class Base(DeclarativeBase):
     pass
 
 
+string_len = 64
+
+
 class Coffee(Base):
     __tablename__ = "coffees"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(Enum("espresso", "espresso machiatto", "espresso americano", "cappuccino latte", "nes", "frappe"), nullable=False)
+    type = Column(Enum("espresso", "espresso machiatto", "cappuccino", "espresso americano", "cappuccino latte", "nes", "frappe"), nullable=False)
     size = Column(Enum("single", "double", "quadruple"), nullable=False)
-    variety = Column(Enum("80% arabica + 20% robust", "100% arabica", "decaffeine"), nullable=False)
+    variety = Column(Enum("80% arabica + 20% robusta", "100% arabica", "decaffeine"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
     sugar_type = Column(Enum("white", "brown", "saccharin", "stevia", "honey"))
     milk = Column(Enum("fresh", "evapore", "almond", "coconut", "oat"))
@@ -26,7 +29,7 @@ class FreddoFlat(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     type = Column(Enum("freddo espresso", "espresso cappuccino", "espresso cappuccino latte", "flat white cold", "flat white hot"), nullable=False)
     size = Column(Enum("regular", "XL"), nullable=False)
-    variety = Column(Enum("80% arabica + 20% robust", "100% arabica", "decaffeine"), nullable=False)
+    variety = Column(Enum("80% arabica + 20% robusta", "100% arabica", "decaffeine"), nullable=False)
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
     sugar_type = Column(Enum("white", "brown", "saccharin", "stevia", "honey"))
     milk = Column(Enum("fresh", "evapore", "almond", "coconut", "oat"))
@@ -62,7 +65,6 @@ class WeirdChocolate(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     type = Column(Enum("freddoccino", "mochaccino"), nullable=False)
-    temperature = Column(Enum("hot", "cold"), nullable=False)
     extra = Column(Enum("chocolate syrup", "strawberry syrup", "caramel syrup", "hazelnut syrup", "vanilla syrup"))
     cost = Column(Numeric(precision=4, scale=2), nullable=False)
 
@@ -71,7 +73,7 @@ class Beverage(Base):
     __tablename__ = "beverages"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(String(40), nullable=False)
+    type = Column(String(string_len), nullable=False)
     cost = Column(Numeric(precision=4, scale=2), nullable=False)
 
 
@@ -80,6 +82,7 @@ class Tee(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     type = Column(Enum("tee"), nullable=False)
+    variety = Column(Enum("green", "green with pergamot", "rooibos", "moroccan mint", "black with forest fruits", "english breakfast", "apple"))
     sugar = Column(Enum("little", "medium", "medium-to-sweet", "sweet", "very sweet"))
     sugar_type = Column(Enum("white", "brown", "saccharin", "stevia", "honey"))
     milk = Column(Enum("fresh", "evapore", "almond", "coconut", "oat"))
@@ -112,7 +115,7 @@ class Food(Base):
     __tablename__ = "foods"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    type = Column(String(40))
+    type = Column(String(string_len))
     cost = Column(Numeric(precision=4, scale=2), nullable=False)
 
 
@@ -120,7 +123,7 @@ class Offer(Base):
     __tablename__ = "offers"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    description = Column(String(40), nullable=False)
+    description = Column(String(string_len), nullable=False)
     cost = Column(Numeric(precision=4, scale=2), nullable=False)
 
 
@@ -128,7 +131,7 @@ class Address(Base):
     __tablename__ = "addresses"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(40), nullable=False)
+    name = Column(String(string_len), nullable=False)
     latitude = Column(Float(precision=53))
     longitude = Column(Float(precision=53))
 
@@ -137,7 +140,7 @@ class Customer(Base):
     __tablename__ = "customers"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(40), nullable=False)
+    name = Column(String(string_len), nullable=False)
     floor = Column(Integer, nullable=False)
 
     address_id = Column(Integer, ForeignKey("addresses.id"), nullable=False)
@@ -185,10 +188,10 @@ class VOrdersSummary(Base):
     order_id = Column(Integer, primary_key=True)
     order_time = Column(Date)
     tips = Column(Numeric(precision=4, scale=2))
-    tips_method = Column(String(40))
-    source = Column(String(40))
-    payment_method = Column(String(40))
-    name = Column(String(40))
+    tips_method = Column(String(string_len))
+    source = Column(String(string_len))
+    payment_method = Column(String(string_len))
+    name = Column(String(string_len))
     latitude = Column(Float(precision=53))
     longitude = Column(Float(precision=53))
 

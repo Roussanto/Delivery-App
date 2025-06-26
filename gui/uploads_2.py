@@ -1,18 +1,13 @@
 import tkinter
 from datetime import datetime
 
-from sqlalchemy import create_engine, select, and_
+from sqlalchemy import select, and_
 from sqlalchemy.orm import Session
 from colorama import Fore
 
 from orm.model import Workday, Address, Customer, Order, Coffee, FreddoFlat, Filter, Chocolate, WeirdChocolate, Beverage, Tee, Chamomile, Smoothie, Food, Offer, Item
-from func import check_none_type
-
-# Create a connection
-engine = create_engine(
-    "mysql+pymysql://root:Roussanto171!@localhost:3306/income_dummy",
-    pool_pre_ping=True
-)
+from orm.engine import engine
+from func import check_none_type, data_validation
 
 
 def upload_workday(info: dict[str, tkinter.Variable]):
@@ -58,7 +53,7 @@ def upload_address(info: dict[str, tkinter.Variable]):
 
 def upload_customer(info: dict[str, tkinter.Variable], address_name):
     # Export the variables' input
-    customer_name = info["customer name"].get()
+    customer_name = info["name"].get()
     floor = info["floor"].get()
 
     # Empty customer, floor entries means that the input is a string of length 0.
@@ -71,9 +66,7 @@ def upload_customer(info: dict[str, tkinter.Variable], address_name):
     with Session(engine) as session:
         subquery = select(Address.id).where(Address.name == address_name)
         sub_address_id = session.execute(subquery).scalars().first()
-        print(sub_address_id)
-    with Session(engine) as session:
-        query = select(Customer.name).where(Customer.address_id == 1)
+        query = select(Customer.name).where(Customer.address_id == sub_address_id)
         db_customers = session.execute(query).scalars().all()
 
         if customer_name in db_customers:
@@ -110,11 +103,11 @@ def upload_order(info: dict[str, tkinter.Variable], workday_date, customer_name,
     with Session(engine) as session:
         # Workday id
         subquery_1 = select(Workday.id).where(Workday.date == workday_date)
-        workday_id = session.execute(subquery_1).scalars()
+        workday_id = session.execute(subquery_1).scalars().first()
 
         # Address id
         subquery_2 = select(Address.id).where(Address.name == address_name)
-        address_id = session.execute(subquery_2).scalars()
+        address_id = session.execute(subquery_2).scalars().first()
 
         # Customer id
         subquery_3 = select(Customer.id).where(and_(
@@ -122,7 +115,7 @@ def upload_order(info: dict[str, tkinter.Variable], workday_date, customer_name,
                                                     Customer.name == customer_name
                                                    )
                                                )
-        customer_id = session.execute(subquery_3).scalars()
+        customer_id = session.execute(subquery_3).scalars().first()
 
         # Add order
         session.add(Order(workday_id=workday_id,
@@ -136,6 +129,7 @@ def upload_order(info: dict[str, tkinter.Variable], workday_date, customer_name,
                     )
         session.commit()
         print(Fore.GREEN + "Order upload successful!")
+        print()
 
 
 def upload_items(basket):
@@ -144,80 +138,80 @@ def upload_items(basket):
     for item in basket:
         # Remove non-ingredient variables
         offer = item.pop("offer")
-        item.pop("category")
+        category = item.pop("category")
 
         # Make empty StringVars to None
         for key in list(item.keys()):
             item[key] = check_none_type(item[key])[0]
 
         with Session(engine) as session:
-            if item["category"] == "Coffee":
+            if category == "Coffee":
                 new_item_info = {
                     "item": Coffee(**item),
                     "table": Coffee,
                     "product_type": "coffee",
                     "offer": offer
                 }
-            elif item["category"] == "Freddo or Flat":
+            elif category == "Freddo or Flat":
                 new_item_info = {
                     "item": FreddoFlat(**item),
-                    "table": Coffee,
+                    "table": FreddoFlat,
                     "product_type": "freddo or flat",
                     "offer": offer
                 }
-            elif item["category"] == "Filter":
+            elif category == "Filter":
                 new_item_info = {
                     "item": Filter(**item),
-                    "table": Coffee,
+                    "table": Filter,
                     "product_type": "filter",
                     "offer": offer
                 }
-            elif item["category"] == "Chocolate":
+            elif category == "Chocolate":
                 new_item_info = {
                     "item": Chocolate(**item),
-                    "table": Coffee,
+                    "table": Chocolate,
                     "product_type": "chocolate",
                     "offer": offer
                 }
-            elif item["category"] == "Food":
+            elif category == "Food":
                 new_item_info = {
                     "item": Food(**item),
-                    "table": Coffee,
+                    "table": Food,
                     "product_type": "food",
                     "offer": offer
                 }
-            elif item["category"] == "Beverage":
+            elif category == "Beverage":
                 new_item_info = {
                     "item": Beverage(**item),
-                    "table": Coffee,
+                    "table": Beverage,
                     "product_type": "beverage",
                     "offer": offer
                 }
-            elif item["category"] == "Chamomile":
+            elif category == "Chamomile":
                 new_item_info = {
                     "item": Chamomile(**item),
                     "table": Coffee,
                     "product_type": "chamomile",
                     "offer": offer
                 }
-            elif item["category"] == "Weird Chocolate":
+            elif category == "Weird Chocolate":
                 new_item_info = {
                     "item": WeirdChocolate(**item),
-                    "table": Coffee,
+                    "table": WeirdChocolate,
                     "product_type": "weird chocolate",
                     "offer": offer
                 }
-            elif item["category"] == "Tee":
+            elif category == "Tee":
                 new_item_info = {
                     "item": Tee(**item),
-                    "table": Coffee,
+                    "table": Tee,
                     "product_type": "tee",
                     "offer": offer
                 }
-            elif item["category"] == "Smoothie":
+            elif category == "Smoothie":
                 new_item_info = {
                     "item": Smoothie(**item),
-                    "table": Coffee,
+                    "table": Smoothie,
                     "product_type": "smoothie",
                     "offer": offer
                 }
@@ -248,7 +242,7 @@ def upload_items_polymorphic(basket_updated):
 
             # Find offer id
             query = select(Offer.id).where(Offer.description == new_item_info["offer"])
-            offer_id = session.execute(query).scalars()
+            offer_id = session.execute(query).scalars().first()
 
             # Find product id
             query = select(new_item_info["table"].id).order_by(new_item_info["table"].id.desc())
@@ -272,6 +266,10 @@ def upload_data(basket, tab1, tab2, tab3):
     address_info = tab2.address_frame.address_dict
     customer_info = tab2.customer_frame.customer_dict
     order_info = tab3.order_frame.order_dict
+
+    # Perform check-up
+    data_validation(workday_info, address_info, customer_info, order_info, basket)
+    print(basket)
 
     # Upload workday
     upload_workday(workday_info)

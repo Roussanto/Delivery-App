@@ -207,9 +207,9 @@ class WorkdayFrame(ttk.Frame):
         self.create_layout()
 
     def define_variables(self):
-        self.date_var = tk.StringVar()
-        self.hours_var = tk.StringVar()
-        self.payment_var = tk.DoubleVar()
+        self.date_var = tk.StringVar(value="2000-04-26")
+        self.hours_var = tk.IntVar(value=10)
+        self.payment_var = tk.DoubleVar(value=10.0)
 
         # Variables are stored in a dict -> sent easier as package to function "Upload"
         self.workday_dict = {"date": self.date_var,
@@ -278,9 +278,9 @@ class AddressFrame(ttk.Frame):
         self.address_entry.bind("<KeyRelease>", self.check_log)
 
     def define_variables(self):
-        self.address_var = tk.StringVar()
-        self.lat_var = tk.DoubleVar()
-        self.long_var = tk.DoubleVar()
+        self.address_var = tk.StringVar(value="Kantouni")
+        self.lat_var = tk.DoubleVar(value=37.0)
+        self.long_var = tk.DoubleVar(value=23.5)
 
         # Variables are stored in a dict -> sent easier as package to function "Upload"
         self.address_dict = {"address": self.address_var,
@@ -346,11 +346,11 @@ class CustomerFrame(ttk.Frame):
         self.create_layout()
 
     def define_variables(self):
-        self.customer_var = tk.StringVar()
+        self.customer_var = tk.StringVar(value="Eirini")
         self.floor_var = tk.IntVar()
 
         # Variables are stored in a dict -> sent easier as package to function "Upload"
-        self.customer_dict = {"customer name": self.customer_var,
+        self.customer_dict = {"name": self.customer_var,
                               "floor": self.floor_var}
 
     def create_widgets(self):
@@ -402,12 +402,12 @@ class OrderFrame(ttk.Frame):
         self.create_layout()
 
     def define_variables(self):
-        self.order_time_var = tk.StringVar()
-        self.delivery_time_var = tk.StringVar()
+        self.order_time_var = tk.StringVar(value="10:00:00")
+        self.delivery_time_var = tk.StringVar(value="11:00:00")
         self.tips_var = tk.DoubleVar()
         self.tips_method_var = tk.StringVar()
-        self.source_var = tk.StringVar()
-        self.payment_method_var = tk.StringVar()
+        self.source_var = tk.StringVar(value="Efood")
+        self.payment_method_var = tk.StringVar(value="Card")
 
         self.tips_var.trace_add("write", self.check_tips)
         self.tips_method_var.trace_add("write", self.auto_card_select)
@@ -582,7 +582,7 @@ class GeneralInfoFrame(ttk.Frame):
         self.offer_cost_entry.config(state="disabled")
 
     def define_variables(self):
-        self.offer_var = tk.StringVar()
+        self.offer_var = tk.StringVar(value="None")
         self.item_type_var = tk.StringVar()
         self.offer_cost_var = tk.DoubleVar()
 
@@ -592,7 +592,7 @@ class GeneralInfoFrame(ttk.Frame):
 
         # "Input offer" widget
         self.offer_label = ttk.Label(self, text="Input offer type: ")
-        self.offer_combo = ttk.Combobox(self, textvariable=self.offer_var, values=[None,
+        self.offer_combo = ttk.Combobox(self, textvariable=self.offer_var, values=["None",
                                                                                    "coffee, toast, fresh orange juice",
                                                                                    "coffee, soft cookie, water",
                                                                                    "coffee, bagel, mini donut"])

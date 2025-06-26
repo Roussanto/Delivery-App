@@ -2,26 +2,6 @@ from datetime import datetime
 from fuzzywuzzy import fuzz
 from colorama import Fore
 import itertools
-import mysql.connector
-
-
-# This function connects to the mysql database and returns the database itself.
-# The database is used as an input to upload into it data
-def connect_database():
-    # Connect to database
-    income_db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Roussanto171!"
-    )
-
-    # Create cursor object
-    cursor = income_db.cursor()
-
-    # Use database
-    cursor.execute("USE income;")
-
-    return income_db
 
 
 # Empty address entry means that the input is a string of length 0.
@@ -37,56 +17,6 @@ def check_none_type(*args):
             new_args.append(arg)
 
     return *new_args,
-
-
-def workday_exists(database, date):
-    cursor = database.cursor()
-    # This query will produce a list of all the dates in the database
-    query = "SELECT date FROM workdays"
-    cursor.execute(query)
-
-    # Collect all the dates that have been stored in the database
-    db_dates = [db_workday[0] for db_workday in cursor.fetchall()]
-
-    # If the GUI date is in the dates already stored in the database, then the workday already exists.
-    if date in db_dates:
-        return True
-    else:
-        return False
-
-
-def address_exists(database, address):
-    cursor = database.cursor()
-    # This query will produce a list of all the addresses in the database
-    query = "SELECT name FROM addresses"
-    cursor.execute(query)
-
-    # Collect all the address names that have been stored in the database
-    db_addresses = [db_address[0] for db_address in cursor.fetchall()]
-
-    # If the GUI address is in the addresses already stored in the database, then the address already exists.
-    if address in db_addresses:
-        return True
-    else:
-        return False
-
-
-def customer_exists(database, address_name, customer_name):
-    cursor = database.cursor()
-    # This query will produce a list of all the customers who live in this address
-    query = ("SELECT name FROM customers "
-             f"WHERE address_id IN (SELECT id FROM addresses WHERE name = '{address_name}');")
-    cursor.execute(query)
-
-    # Collect all the residents of this address
-    residents = [resident[0] for resident in cursor.fetchall()]
-
-    # If the customer name is in the residents of the GUI address that have already been stored,
-    # then the customer exists.
-    if customer_name in residents:
-        return True
-    else:
-        return False
 
 
 def prepare_item_tab_for_next_item(tab4):
@@ -145,56 +75,85 @@ def make_columns_str(item):
     return column_str, values_str
 
 
-def create_relations(cursor, item, customer_dict, address_dict, workday_dict, order_dict, db_tablename):
-    # Detect order id
-    workday_date = datetime.strptime(workday_dict["date"].get(), "%Y-%m-%d").date()
-    order_time = datetime.strptime(order_dict["order time"].get(), "%H:%M:%S").time()
-    customer_name = customer_dict["customer name"].get()
-    address = address_dict["address"].get()
-    query = (f"SELECT id FROM orders "
-             f"WHERE customer_id = ("
-             f"  SELECT id FROM customers"
-             f"  WHERE name = '{customer_name}'"
-             f"  AND address_id = ("
-             f"     SELECT id FROM addresses"
-             f"     WHERE name = '{address}'"
-             f"  )"
-             f")"
-             f"AND workday_id = ("
-             f"  SELECT id FROM workdays"
-             f"  WHERE date = '{workday_date}'"
-             f")"
-             f"AND order_time = '{order_time}';")
-    cursor.execute(query)
-    order_id = cursor.fetchall()[0][0]
+def data_validation(workday_info, address_info, customer_info, order_info, basket):
+    # Instantiate flags
+    workday_correct = False
+    address_correct = False
+    customer_correct = False
+    order_correct = False
+    items_correct = []
 
-    # Detect offer id
-    offer_desc = item["offer"]
-    query = (f"SELECT id FROM offers "
-             f"WHERE description = '{offer_desc}';")
-    cursor.execute(query)
-    offer_id = cursor.fetchall()[0][0]
+    # Check workday input
+    try:
+        date = datetime.strptime(workday_info["date"].get(), "%Y-%m-%d").date()
+        hours = workday_info["hours"].get()
+        payment = workday_info["payment"].get()
+    except ValueError:
+        print(Fore.RED + "Workday: wrong data")
+    else:
+        if date and hours > 0 and payment > 0:
+            workday_correct = True
+        else:
+            print(Fore.RED + "Workday: wrong data")
 
-    # Detect product id - We look for the item just inserted
-    query = (f"SELECT id FROM {db_tablename} "
-             f"ORDER BY id DESC LIMIT 1;")
-    cursor.execute(query)
-    product_id = cursor.fetchall()[0][0]
+    # Check address input
+    address = address_info["address"].get()
+    latitude = address_info["latitude"].get()
+    longitude = address_info["longitude"].get()
 
-    # Detect product type
-    product_type = str(item["category"]).lower()
+    if address and 36.0 <= latitude <= 38.0 and 23.0 <= longitude <= 24.0:
+        address_correct = True
+    else:
+        print(Fore.RED + "Address: wrong data")
 
-    # Insert into "items"
-    query = (f"INSERT INTO items (order_id, offer_id, product_id, product_type) "
-             f"VALUES ({order_id}, {offer_id}, {product_id}, '{product_type}');")
-    cursor.execute(query)
+    # Check customer input
+    customer_name = customer_info["name"].get()
+
+    if customer_name:
+        customer_correct = True
+    else:
+        print(Fore.RED + "Customer: wrong data")
+
+    # Check order input
+    try:
+        order_time = datetime.strptime(order_info["order time"].get(), "%H:%M:%S").time()
+        delivery_time = datetime.strptime(order_info["delivery time"].get(), "%H:%M:%S").time()
+        tips = order_info["tips"].get()
+        source = order_info["source"].get()
+        payment_method = order_info["payment method"].get()
+    except ValueError:
+        print(Fore.RED + "Order: wrong data")
+    else:
+        if order_time and delivery_time and tips >= 0 and source and payment_method:
+            order_correct = True
+        else:
+            print(Fore.RED + "Order: wrong data")
+
+    # Check item input
+    for item in basket:
+        if item["category"] in ["Freddo or Flat", "Coffee"]:
+            if item["type"] and item["size"] and item["variety"]:
+                items_correct.append(True)
+            else:
+                items_correct.append(False)
+
+
+    # Validate results
+    if workday_correct and address_correct and customer_correct and order_correct:
+        return True
+    else:
+        workday_correct = False
+        address_correct = False
+        customer_correct = False
+        order_correct = False
+
+        return False
+
+
 
 
 # For a selected workday create a dict containing addresses and their corresponding customers
 def check_customer_misspellings():
-    # Connect to the database
-    database = connect_database()
-
     cursor = database.cursor()
 
     # Draw the addresses
