@@ -75,7 +75,7 @@ def make_columns_str(item):
     return column_str, values_str
 
 
-def data_validation(workday_info, address_info, customer_info, order_info, basket):
+def data_valid(workday_info, address_info, customer_info, order_info, basket):
     # Instantiate flags
     workday_correct = False
     address_correct = False
@@ -100,7 +100,6 @@ def data_validation(workday_info, address_info, customer_info, order_info, baske
     address = address_info["address"].get()
     latitude = address_info["latitude"].get()
     longitude = address_info["longitude"].get()
-
     if address and 36.0 <= latitude <= 38.0 and 23.0 <= longitude <= 24.0:
         address_correct = True
     else:
@@ -108,7 +107,6 @@ def data_validation(workday_info, address_info, customer_info, order_info, baske
 
     # Check customer input
     customer_name = customer_info["name"].get()
-
     if customer_name:
         customer_correct = True
     else:
@@ -131,26 +129,52 @@ def data_validation(workday_info, address_info, customer_info, order_info, baske
 
     # Check item input
     for item in basket:
-        if item["category"] in ["Freddo or Flat", "Coffee"]:
-            if item["type"] and item["size"] and item["variety"]:
-                items_correct.append(True)
-            else:
-                items_correct.append(False)
-
+        if item["type"]:
+            if item["category"] in ["Coffee", "Freddo or Flat"]:
+                if item["size"] and item["variety"]:
+                    items_correct.append(True)
+                else:
+                    items_correct.append(False)
+                    print(Fore.RED + "Item: wrong data")
+            elif item["category"] == "Filter":
+                if item["size"]:
+                    items_correct.append(True)
+                else:
+                    items_correct.append(False)
+                    print(Fore.RED + "Item: wrong data")
+            elif item["category"] == "Chocolate":
+                if item["temperature"]:
+                    items_correct.append(True)
+                else:
+                    items_correct.append(False)
+                    print(Fore.RED + "Item: wrong data")
+            elif item["category"] == "Tee":
+                if item["variety"]:
+                    items_correct.append(True)
+                else:
+                    items_correct.append(False)
+                    print(Fore.RED + "Item: wrong data")
+            elif item["category"] == "Smoothie":
+                if item["milk"]:
+                    items_correct.append(True)
+                else:
+                    items_correct.append(False)
+                    print(Fore.RED + "Item: wrong data")
+        else:
+            items_correct.append(False)
+            print(Fore.RED + "Item: wrong data")
 
     # Validate results
-    if workday_correct and address_correct and customer_correct and order_correct:
+    if workday_correct and address_correct and customer_correct and order_correct and all(items_correct):
         return True
     else:
         workday_correct = False
         address_correct = False
         customer_correct = False
         order_correct = False
+        items_correct = []
 
         return False
-
-
-
 
 # For a selected workday create a dict containing addresses and their corresponding customers
 def check_customer_misspellings():

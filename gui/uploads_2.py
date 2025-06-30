@@ -7,7 +7,7 @@ from colorama import Fore
 
 from orm.model import Workday, Address, Customer, Order, Coffee, FreddoFlat, Filter, Chocolate, WeirdChocolate, Beverage, Tee, Chamomile, Smoothie, Food, Offer, Item
 from orm.engine import engine
-from func import check_none_type, data_validation
+from func import check_none_type, data_valid
 
 
 def upload_workday(info: dict[str, tkinter.Variable]):
@@ -228,12 +228,6 @@ def upload_items(basket):
 
 def upload_items_polymorphic(basket_updated):
     for new_item_info in basket_updated:
-        # Parse data
-        # workday_date = datetime.strptime(workday_dict["date"].get(), "%Y-%m-%d").date()
-        # order_time = datetime.strptime(order_dict["order time"].get(), "%H:%M:%S").time()
-        # customer_name = customer_dict["customer name"].get()
-        # address = address_dict["address"].get()
-
         # Select the order that was just inserted
         with Session(engine) as session:
             # Find last recorder order id
@@ -268,18 +262,24 @@ def upload_data(basket, tab1, tab2, tab3):
     order_info = tab3.order_frame.order_dict
 
     # Perform check-up
-    data_validation(workday_info, address_info, customer_info, order_info, basket)
-    print(basket)
+    if data_valid(workday_info, address_info, customer_info, order_info, basket):
+        # Upload workday
+        upload_workday(workday_info)
+        # Upload address
+        upload_address(address_info)
+        # Upload customer
+        upload_customer(customer_info, address_info["address"].get())
+        # Upload order
+        upload_order(order_info, workday_info["date"].get(), customer_info["name"].get(), address_info["address"].get())
+        # Upload items in category: Coffee, Food etc
+        basket_updated = upload_items(basket)
+        # Upload items in items' junction table
+        upload_items_polymorphic(basket_updated)
 
-    # Upload workday
-    upload_workday(workday_info)
-    # Upload address
-    upload_address(address_info)
-    # Upload customer
-    upload_customer(customer_info, address_info["address"].get())
-    # Upload order
-    upload_order(order_info, workday_info["date"].get(), customer_info["name"].get(), address_info["address"].get())
-    # Upload items in category: Coffee, Food etc
-    basket_updated = upload_items(basket)
-    # Upload items in items' junction table
-    upload_items_polymorphic(basket_updated)
+        return True
+
+    else:
+        print(Fore.YELLOW + "Please validate your inputs")
+        print()
+
+        return False

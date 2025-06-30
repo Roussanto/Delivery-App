@@ -102,13 +102,13 @@ class App(tk.Tk):
 
         # When the Upload button is pressed the data will be stored in the database.
         def press_upload():
-            upload_data(self.basket, self.tab1, self.tab2, self.tab3)
-            # Empty the basket
-            self.basket.clear()
-            # Clear order cost
-            self.order_cost = 0
-            # Clear Review panel
-            self.tab5.destroy()
+            if upload_data(self.basket, self.tab1, self.tab2, self.tab3):
+                # Empty the basket
+                self.basket.clear()
+                # Clear order cost
+                self.order_cost = 0
+                # Clear Review panel
+                self.tab5.destroy()
 
         def press_remove_from_basket():
             item_rem_num = self.remove_var.get()
