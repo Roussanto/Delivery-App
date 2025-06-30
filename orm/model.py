@@ -1,5 +1,5 @@
-from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy import Column, Integer, String, Float, Numeric, Date, Time, Enum, ForeignKey
+from sqlalchemy.orm import DeclarativeBase, relationship
+from sqlalchemy import Column, Integer, String, Double, Numeric, Date, Time, Enum, ForeignKey
 
 
 class Base(DeclarativeBase):
@@ -132,8 +132,10 @@ class Address(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(string_len), nullable=False)
-    latitude = Column(Float(precision=53))
-    longitude = Column(Float(precision=53))
+    latitude = Column(Double(asdecimal=True))
+    longitude = Column(Double(asdecimal=True))
+
+    customers = relationship("Customer", back_populates="address")
 
 
 class Customer(Base):
@@ -144,6 +146,8 @@ class Customer(Base):
     floor = Column(Integer, nullable=False)
 
     address_id = Column(Integer, ForeignKey("addresses.id"), nullable=False)
+
+    address = relationship("Address", back_populates="customers")
 
 
 class Workday(Base):
@@ -192,8 +196,8 @@ class VOrdersSummary(Base):
     source = Column(String(string_len))
     payment_method = Column(String(string_len))
     name = Column(String(string_len))
-    latitude = Column(Float(precision=53))
-    longitude = Column(Float(precision=53))
+    latitude = Column(Double(asdecimal=True))
+    longitude = Column(Double(asdecimal=True))
 
 
 

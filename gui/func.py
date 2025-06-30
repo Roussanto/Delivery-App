@@ -3,6 +3,12 @@ from fuzzywuzzy import fuzz
 from colorama import Fore
 import itertools
 
+from sqlalchemy import select
+from sqlalchemy.orm import Session
+
+from orm.engine import engine
+from orm.model import Address, Customer
+
 
 # Empty address entry means that the input is a string of length 0.
 # We need to make it NoneType, so the db can decline the input of an empty address.
@@ -176,35 +182,40 @@ def data_valid(workday_info, address_info, customer_info, order_info, basket):
 
         return False
 
+
 # For a selected workday create a dict containing addresses and their corresponding customers
 def check_customer_misspellings():
-    cursor = database.cursor()
+    # Instantiate a list to store address-customers pairs
+    pairs = []
 
-    # Draw the addresses
-    query = "SELECT name from addresses;"
+    # Extract address-customers pairs
+    with Session(engine) as session:
+        query = select(Address.name)
+        db_addresses = session.execute(query).scalars().all()
 
-    cursor.execute(query)
-    selected_addresses = [add_tpl[0] for add_tpl in cursor.fetchall()]
+        for address in db_addresses:
+            # Extract address id
+            subquery = select(Address.id).where(Address.name == address)
+            address_id = session.execute(subquery).scalars().first()
 
-    checks = []
-    for add in selected_addresses:
-        query = ("SELECT name FROM customers WHERE address_id IN ("
-                 "  SELECT id FROM addresses"
-                 f" WHERE name = '{add}');")
-        cursor.execute(query)
-        custs = [cust_tpl[0] for cust_tpl in cursor.fetchall()]
-        checks.append({"address": add, "customers": custs})
+            # Extract all residents of that address
+            query = select(Customer.name).where(Customer.address_id == address_id)
+            customers = session.execute(query).scalars().all()
 
-    prob_checks = []
-    for check in checks:
-        for cust1, cust2 in list(itertools.product(check["customers"], repeat=2)):
-            simil = fuzz.ratio(cust1, cust2)
-            if 90 <= simil <= 99:
-                if check not in prob_checks:
-                    prob_checks.append(check)
+            # Store the address-customers pairs
+            pairs.append({"address": address, "customers": customers})
 
-    if prob_checks:
-        for prob_check in prob_checks:
-            print(prob_check)
-    else:
-        print(Fore.BLUE, "No misspellings!")
+        prob_simil = []
+        for pair in pairs:
+            for customer_1, customer_2 in list(itertools.product(pair["customers"], repeat=2)):
+                simil = fuzz.ratio(customer_1, customer_2)
+                if 90 <= simil <= 99:
+                    if pair not in prob_simil:
+                        prob_simil.append(pair)
+
+        # Print pairs with probable similarities
+        if prob_simil:
+            for prob_check in prob_simil:
+                print(prob_check)
+        else:
+            print(Fore.BLUE, "No misspellings!")
