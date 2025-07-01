@@ -1307,25 +1307,64 @@ Konitsis 15
 Napoleontos Zerva 14
 Maikina 58
 Stratigou Makrigianni 53
-test
-Kantouni
-Kantouni-2
-asdas
-asdfdas
-asda
-adas
-ada
-fdfd
-sdsd
-fasa
-asdasda
-afda
-vxcvc
-vdvcv
-sdada
-asdasd
-dfdf
-dad
-sadasd
-adadassd
-dimokratias
+Mantos Mavrogenous 10
+Chlois 10
+Marikas Kotopouli 1
+Georgiou Papandreou 4
+Gorgopotamou 7
+Galinis 20
+Aradou 38
+FEPA-A-2057
+Kallistratous 69
+Agias Elenis 27
+Ipolochagou Kavvatha 9
+Kallistratous 50
+Pontou 5
+Pontou 17
+Ifaistionos 3
+Ipolochagou Grigoriou Zogkou 45
+Olimpias 2
+Chrisippou 29
+Nikou Kazantzaki 29
+Ifasiou 26
+Karaiskaki 7
+Louloudion 34
+28is Oktovriou 34
+Koropiou 9
+Smirnis 14
+Kalavriton 30
+Anakreontos 66
+Archilochou 1
+Persepoleos 4
+Xirogianni 35
+Michail Anastasaki 8
+Mikras Asias 3
+Agiou Therapontos 7
+Lefktron 3
+Agias Elenis 40
+Agiou Gerasimou 26
+Seilistrias 32
+Papagou 53
+Polifimou 4
+Vakchilidou 3
+Gavgamilon 30
+Taxilou 111
+Agias Lavras 28
+Kerasountos 24
+Michalakopoulou 54
+Ioannou Theologou 11
+Georgiou Papandreou 26
+Antoniou Travlantoni 1
+Anakreontos 75
+Grigoriou Afxentiou 53
+Oulof Palme 5
+Kiprou 4
+Archilochou 2
+Chrisanthemon 11
+Kamvisi 7
+Georgiou Papandreou 41A
+Amfitritis 21
+Kallistratous 66
+Avidou 67
+Papanikolaou 7
+Papagou 32
