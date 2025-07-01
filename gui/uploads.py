@@ -1,91 +1,61 @@
+import tkinter
 from datetime import datetime
+from typing import Dict, List
 
-import _tkinter
-import mysql.connector
-from tkinter import messagebox
+from sqlalchemy import select, and_
+from sqlalchemy.orm import Session
 from colorama import Fore
 
-from func import check_none_type, workday_exists, address_exists, customer_exists, make_columns_str, create_relations
+from orm.model import Workday, Address, Customer, Order, Coffee, FreddoFlat, Filter, Chocolate, WeirdChocolate, Beverage, Tee, Chamomile, Smoothie, Food, Offer, Item
+from orm.engine import engine
+from func import check_none_type, data_valid
 
 
-# This function connects to the mysql database and returns the database itself.
-# The database is used as an input to upload into it data
-def connect_database():
-    # Connect to database
-    income_db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Roussanto171!"
-    )
-
-    # Create cursor object
-    cursor = income_db.cursor()
-
-    # Use database
-    cursor.execute("USE income;")
-
-    return income_db
-
-
-def upload_workday(database, dict_var):
-    # Create cursor object
-    cursor = database.cursor()
-
+def upload_workday(info: Dict[str, tkinter.Variable]) -> None:
     # Export the variables' input
-    date = datetime.strptime(dict_var["date"].get(), "%Y-%m-%d").date()
-    hours = dict_var["hours"].get()
-    payment = dict_var["payment"].get()
+    date = datetime.strptime(info["date"].get(), "%Y-%m-%d").date()
+    hours = info["hours"].get()
+    payment = info["payment"].get()
 
-    if workday_exists(database, date):
-        print(Fore.BLUE + "Workday already exists!")
-    else:
-        # Insert workday data query
-        query = ("INSERT INTO workdays (date, hours, payment) "
-                 f"VALUES (%s, %s, %s);")
+    with Session(engine) as session:
+        # Dates in the database
+        query = select(Workday.date)
+        db_dates = session.execute(query).scalars().all()
 
-        # Execute query and save changes
-        cursor.execute(query, (date, hours, payment))
-        database.commit()
+        if date in db_dates:
+            print(Fore.BLUE + "Workday already exists!")
+        else:
+            session.add(Workday(date=date, hours=hours, payment=payment))
+            session.commit()
+            print(Fore.GREEN + "Workday upload successful!")
 
-        print(Fore.GREEN + "Workday upload successful!")
 
-
-def upload_address(database, dict_var):
-    # Create cursor object
-    cursor = database.cursor()
-
+def upload_address(info: Dict[str, tkinter.Variable]) -> None:
     # Export the variables' input
-    address = dict_var["address"].get()
-    latitude = dict_var["latitude"].get()
-    longitude = dict_var["longitude"].get()
+    address = info["address"].get()
+    latitude = info["latitude"].get()
+    longitude = info["longitude"].get()
 
     # check_none_type returns (val,) because it's only one value in tuple.
     # To extract the val itself we use val[0]
     address = check_none_type(address)[0]
 
-    # If the address already exists then a warning appears notifying us
-    # If not, then the new address is added into the database
-    if address_exists(database, address):
-        print(Fore.BLUE + "Address already exists!")
-    else:
-        # Insert address data query
-        query = ("INSERT INTO addresses (name, latitude, longitude) "
-                 f"VALUES (%s, %s, %s);")
+    with Session(engine) as session:
+        query = select(Address.name)
+        db_addresses = session.execute(query).scalars().all()
 
-        # Execute query and save changes
-        cursor.execute(query, (address, latitude, longitude))
-        database.commit()
-
-        print(Fore.GREEN + "Address upload successful!")
+        if address in db_addresses:
+            print(Fore.BLUE + "Address already exists!")
+        else:
+            session.add(Address(name=address, latitude=latitude, longitude=longitude))
+            session.commit()
+            print(Fore.GREEN + "Address upload successful!")
 
 
-def upload_customer(database, dict_var, address_name):
-    # Create cursor object
-    cursor = database.cursor()
-
+def upload_customer(info: Dict[str, tkinter.Variable], address_name) -> None:
     # Export the variables' input
-    customer_name = dict_var["customer name"].get()
-    floor = dict_var["floor"].get()
+    customer_name = info["name"].get()
+    floor = info["floor"].get()
 
     # Empty customer, floor entries means that the input is a string of length 0.
     # We need to make it NoneType, so the db can decline the input of an empty input.
@@ -94,172 +64,223 @@ def upload_customer(database, dict_var, address_name):
     # If the customer name already exists and is already associated with the inputted address,
     # then the customer already exists in the database
     # Else,they have to be inserted into the database.
-    if customer_exists(database, address_name, customer_name):
-        print(Fore.BLUE + "Customer already exists!")
-    else:
-        # Insert customer data. address_id is the inputted address's id.
-        query = ("INSERT INTO customers (name, address_id, floor) "
-                 "SELECT %s, id, %s "
-                 f"FROM addresses WHERE name = '{address_name}';")
+    with Session(engine) as session:
+        subquery = select(Address.id).where(Address.name == address_name)
+        sub_address_id = session.execute(subquery).scalars().first()
+        query = select(Customer.name).where(Customer.address_id == sub_address_id)
+        db_customers = session.execute(query).scalars().all()
 
-        # Execute query and save changes
-        cursor.execute(query, (customer_name, floor))
-        database.commit()
+        if customer_name in db_customers:
+            print(Fore.BLUE + "Customer already exists!")
+        else:
+            session.add(Customer(name=customer_name, floor=floor, address_id=sub_address_id))
+            session.commit()
+            print(Fore.GREEN + "Customer upload successful!")
 
-        print(Fore.GREEN + "Customer upload successful!")
 
-
-def upload_order(database, dict_var, workday_date, customer_name, address_name):
-    # Create cursor object
-    cursor = database.cursor()
-
+def upload_order(info: Dict[str, tkinter.Variable], workday_date, customer_name, address_name) -> None:
     # Export the variables' input
-    order_time = datetime.strptime(dict_var["order time"].get(), "%H:%M:%S").time()
-    delivery_time = datetime.strptime(dict_var["delivery time"].get(), "%H:%M:%S").time()
-    tips = dict_var["tips"].get()
-    tips_method = dict_var["tips method"].get()
-    source = dict_var["source"].get()
-    payment_method = dict_var["payment method"].get()
+    order_time = datetime.strptime(info["order time"].get(), "%H:%M:%S").time()
+    delivery_time = datetime.strptime(info["delivery time"].get(), "%H:%M:%S").time()
+    tips = info["tips"].get()
+    tips_method = info["tips method"].get()
+    source = info["source"].get()
+    payment_method = info["payment method"].get()
 
     # Empty entries means that the input is a string of length 0.
     # We need to make it NoneType, so the db can decline the input of an empty input.
     order_time, delivery_time, tips, tips_method, source, payment_method = check_none_type(order_time,
-                                                                                                 delivery_time,
-                                                                                                 tips,
-                                                                                                 tips_method,
-                                                                                                 source,
-                                                                                                 payment_method)
+                                                                                           delivery_time,
+                                                                                           tips,
+                                                                                           tips_method,
+                                                                                           source,
+                                                                                           payment_method)
 
     # If no tips have been added, make them 0
     if tips == "":
         tips = 0.0
 
-    # Insert order data query
-    # First detect the current workday's id
-    cursor.execute(f"SELECT id FROM workdays WHERE date = '{workday_date}';")
-    workday_id = cursor.fetchall()[0][0]
+    # Add an order for given workday, customer name and address
+    with Session(engine) as session:
+        # Workday id
+        subquery_1 = select(Workday.id).where(Workday.date == workday_date)
+        workday_id = session.execute(subquery_1).scalars().first()
 
-    query = ("INSERT INTO orders (customer_id, workday_id, order_time, delivery_time, tips, tips_method, source, payment_method) "
-             "SELECT id, %s, %s, %s, %s, %s, %s, %s FROM customers "
-             f"WHERE name = '{customer_name}' "
-             "AND address_id = ("
-             "                  SELECT id FROM addresses"
-             f"                 WHERE name = '{address_name}'"
-             ");")
+        # Address id
+        subquery_2 = select(Address.id).where(Address.name == address_name)
+        address_id = session.execute(subquery_2).scalars().first()
 
-    # Execute query and save changes
-    cursor.execute(query, (workday_id, order_time, delivery_time, tips, tips_method, source, payment_method))
-    database.commit()
+        # Customer id
+        subquery_3 = select(Customer.id).where(and_(
+                                                    Customer.address_id == address_id,
+                                                    Customer.name == customer_name
+                                                   )
+                                               )
+        customer_id = session.execute(subquery_3).scalars().first()
 
-    print(Fore.GREEN + "Order upload successful!")
+        # Add order
+        session.add(Order(workday_id=workday_id,
+                          customer_id=customer_id,
+                          order_time=order_time,
+                          delivery_time=delivery_time,
+                          tips=tips,
+                          tips_method=tips_method,
+                          source=source,
+                          payment_method=payment_method)
+                    )
+        session.commit()
+        print(Fore.GREEN + "Order upload successful!")
+        print()
 
 
-def upload_items(database, basket, customer_dict, address_dict, workday_dict, order_dict):
-    # Create cursor object
-    cursor = database.cursor()
-
+def upload_items(basket: List[dict]) -> List[dict]:
+    basket_updated = []
     # Export the variables' input
     for item in basket:
+        # Remove non-ingredient variables
+        offer = item.pop("offer")
+        category = item.pop("category")
+
         # Make empty StringVars to None
         for key in list(item.keys()):
             item[key] = check_none_type(item[key])[0]
 
-        if item["category"] == "Coffee":
-            db_tablename = "coffees"
-        elif item["category"] == "Freddo or Flat":
-            db_tablename = "freddos_flats"
-        elif item["category"] == "Filter":
-            db_tablename = "filters"
-        elif item["category"] == "Chocolate":
-            db_tablename = "chocolates"
-        elif item["category"] == "Food":
-            db_tablename = "foods"
-        elif item["category"] == "Beverage":
-            db_tablename = "beverages"
-        elif item["category"] == "Chamomile":
-            db_tablename = "chamomiles"
-        elif item["category"] == "Weird Chocolate":
-            db_tablename = "weird_chocolates"
-        elif item["category"] == "Tee":
-            db_tablename = "tees"
-        elif item["category"] == "Smoothie":
-            db_tablename = "smoothies"
+        with Session(engine) as session:
+            if category == "Coffee":
+                new_item_info = {
+                    "item": Coffee(**item),
+                    "table": Coffee,
+                    "product_type": "coffee",
+                    "offer": offer
+                }
+            elif category == "Freddo or Flat":
+                new_item_info = {
+                    "item": FreddoFlat(**item),
+                    "table": FreddoFlat,
+                    "product_type": "freddo or flat",
+                    "offer": offer
+                }
+            elif category == "Filter":
+                new_item_info = {
+                    "item": Filter(**item),
+                    "table": Filter,
+                    "product_type": "filter",
+                    "offer": offer
+                }
+            elif category == "Chocolate":
+                new_item_info = {
+                    "item": Chocolate(**item),
+                    "table": Chocolate,
+                    "product_type": "chocolate",
+                    "offer": offer
+                }
+            elif category == "Food":
+                new_item_info = {
+                    "item": Food(**item),
+                    "table": Food,
+                    "product_type": "food",
+                    "offer": offer
+                }
+            elif category == "Beverage":
+                new_item_info = {
+                    "item": Beverage(**item),
+                    "table": Beverage,
+                    "product_type": "beverage",
+                    "offer": offer
+                }
+            elif category == "Chamomile":
+                new_item_info = {
+                    "item": Chamomile(**item),
+                    "table": Coffee,
+                    "product_type": "chamomile",
+                    "offer": offer
+                }
+            elif category == "Weird Chocolate":
+                new_item_info = {
+                    "item": WeirdChocolate(**item),
+                    "table": WeirdChocolate,
+                    "product_type": "weird chocolate",
+                    "offer": offer
+                }
+            elif category == "Tee":
+                new_item_info = {
+                    "item": Tee(**item),
+                    "table": Tee,
+                    "product_type": "tee",
+                    "offer": offer
+                }
+            elif category == "Smoothie":
+                new_item_info = {
+                    "item": Smoothie(**item),
+                    "table": Smoothie,
+                    "product_type": "smoothie",
+                    "offer": offer
+                }
+            # Add the new item to the corresponding table
+            session.add(new_item_info["item"])
+            session.commit()
 
-        # columns: (column 1, ..., column n)
-        # values (%s, ..., %s)
-        columns, values_num = make_columns_str(item)
-        # inserts: a tuple form of the items
-        inserts = tuple([val for key, val in list(item.items()) if key not in ["offer", "category"]])
+            # Store the new item info
+            basket_updated.append(new_item_info)
 
-        # Insert address data query
-        query = (f"INSERT INTO {db_tablename} {columns} "
-                 f"VALUES {values_num};")
-
-        # Execute query and save changes
-        cursor.execute(query, inserts)
-
-        create_relations(cursor, item, customer_dict, address_dict, workday_dict, order_dict, db_tablename)
-
-        database.commit()
-
-    print(Fore.GREEN + "Items upload successful!")
-    print()
+    # Return the new item's info
+    return basket_updated
 
 
-def upload_data(workday_tab, addr_cust_tab, order_tab, basket):
-    # Connect to the database
-    database = connect_database()
+def upload_items_polymorphic(basket_updated: list) -> None:
+    for new_item_info in basket_updated:
+        # Select the order that was just inserted
+        with Session(engine) as session:
+            # Find last recorder order id
+            query = select(Order.id).order_by(Order.id.desc())
+            order_id = session.execute(query).scalars().first()
 
-    # Flags
-    workday_success = False
-    address_success = False
-    customer_success = False
+            # Find offer id
+            query = select(Offer.id).where(Offer.description == new_item_info["offer"])
+            offer_id = session.execute(query).scalars().first()
 
-    # Upload inputs from gui.
-    # The following functions also check if the address or the customer already exist in the database
-    # Upload workday
-    try:
-        workday_dict = workday_tab.workday_frame.workday_dict
+            # Find product id
+            query = select(new_item_info["table"].id).order_by(new_item_info["table"].id.desc())
+            product_id = session.execute(query).scalars().first()
 
-        if workday_dict["date"].get() and workday_dict["hours"].get() and workday_dict["payment"].get() > 0.0:
-            upload_workday(database, workday_dict)
-            workday_success = True
-        else:
-            messagebox.showerror("Error", "You have not inserted your workday.")
-    except _tkinter.TclError:
-        messagebox.showerror("Error", "You have not inserted your workday.")
+            # Extract product type
+            product_type = new_item_info["product_type"]
 
-    # Upload address
-    address_dict = addr_cust_tab.address_frame.address_dict
+            # Insert into "items"
+            new_item = Item(product_id=product_id,
+                            product_type=product_type,
+                            order_id=order_id,
+                            offer_id=offer_id)
+            session.add(new_item)
+            session.commit()
 
-    if workday_success:
-        if address_dict["address"].get():
-            upload_address(database, address_dict)
-            address_success = True
-        else:
-            messagebox.showerror("Error", "You have not inserted a customer's address.")
 
-    # Upload customer
-    customer_dict = addr_cust_tab.customer_frame.customer_dict
-    address = addr_cust_tab.address_frame.address_var.get()
+def upload_data(basket: List[dict], tab1, tab2, tab3) -> bool:
+    # Get dicts
+    workday_info = tab1.workday_frame.workday_dict
+    address_info = tab2.address_frame.address_dict
+    customer_info = tab2.customer_frame.customer_dict
+    order_info = tab3.order_frame.order_dict
 
-    if workday_success and address_success:
-        if customer_dict["customer name"].get():
-            upload_customer(database, customer_dict, address)
-            customer_success = True
-        else:
-            messagebox.showerror("Error", "You have not inserted a customer.")
+    # Perform check-up
+    if data_valid(workday_info, address_info, customer_info, order_info, basket):
+        # Upload workday
+        upload_workday(workday_info)
+        # Upload address
+        upload_address(address_info)
+        # Upload customer
+        upload_customer(customer_info, address_info["address"].get())
+        # Upload order
+        upload_order(order_info, workday_info["date"].get(), customer_info["name"].get(), address_info["address"].get())
+        # Upload items in category: Coffee, Food etc
+        basket_updated = upload_items(basket)
+        # Upload items in items' junction table
+        upload_items_polymorphic(basket_updated)
 
-    # Upload order
-    order_dict = order_tab.order_frame.order_dict
-    order_date = workday_tab.workday_frame.date_var.get()
-    customer_name = addr_cust_tab.customer_frame.customer_var.get()
+        return True
 
-    if workday_success and address_success and customer_success:
-        if order_dict["order time"].get() and order_dict["delivery time"] and order_dict["source"].get() and order_dict["payment method"].get():
-            upload_order(database, order_dict, order_date, customer_name, address)
-        else:
-            messagebox.showerror("Error", "You have not inserted an order.")
+    else:
+        print(Fore.YELLOW + "Please validate your inputs")
+        print()
 
-    # Upload item
-    upload_items(database, basket, customer_dict, address_dict, workday_dict, order_dict)
+        return False

@@ -3,10 +3,11 @@ from tkinter import ttk
 import _tkinter
 from colorama import Fore
 
-from uploads_2 import upload_data
-from settings import WIDGET_PAD
+from uploads import upload_data
 from func import make_basket_str, prepare_item_tab_for_next_item, check_customer_misspellings
 from data.costs import *
+
+WIDGET_PAD = 5
 
 # Upload addresses
 address_log = []

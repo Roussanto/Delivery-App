@@ -1,1 +1,0 @@
-WIDGET_PAD = 5
